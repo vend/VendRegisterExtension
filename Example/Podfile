@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'VendRegisterExtension_Example' do
+  pod 'VendRegisterExtension', :path => '../'
+
+  target 'VendRegisterExtension_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
