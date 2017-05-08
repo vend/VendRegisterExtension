@@ -1,0 +1,19 @@
+PODS:
+  - Decodable (0.5)
+  - VendRegisterExtension (0.1.0):
+    - Decodable (~> 0.5)
+
+DEPENDENCIES:
+  - VendRegisterExtension (from `../`)
+
+EXTERNAL SOURCES:
+  VendRegisterExtension:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Decodable: 7c90acc68d357b71d0d6efc120faf9c53c644b7e
+  VendRegisterExtension: 740de41b774d54f82a5fda81e45e014a4b5a539a
+
+PODFILE CHECKSUM: b1068ca3e8c9c08206994c3333f10dcec7ce8af0
+
+COCOAPODS: 1.2.1

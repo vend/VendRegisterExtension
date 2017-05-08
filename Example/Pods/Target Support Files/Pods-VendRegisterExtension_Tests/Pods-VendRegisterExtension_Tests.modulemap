@@ -1,0 +1,6 @@
+framework module Pods_VendRegisterExtension_Tests {
+  umbrella header "Pods-VendRegisterExtension_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

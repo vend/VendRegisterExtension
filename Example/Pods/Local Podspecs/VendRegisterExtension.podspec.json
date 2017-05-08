@@ -1,0 +1,27 @@
+{
+  "name": "VendRegisterExtension",
+  "version": "0.1.0",
+  "summary": "A short description of VendRegisterExtension.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Vend/VendRegisterExtension",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "TomCarey": "tom@cactuslab.com"
+  },
+  "source": {
+    "git": "https://github.com/Vend/VendRegisterExtension.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "VendRegisterExtension/Classes/**/*",
+  "dependencies": {
+    "Decodable": [
+      "~> 0.5"
+    ]
+  }
+}

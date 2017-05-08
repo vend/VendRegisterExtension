@@ -1,0 +1,6 @@
+framework module VendRegisterExtension {
+  umbrella header "VendRegisterExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}
