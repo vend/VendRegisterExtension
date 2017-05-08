@@ -1,6 +1,6 @@
 # VendRegisterExtension
 
-[![CI Status](http://img.shields.io/travis/dan.brooker@gmail.com/VendRegisterExtension.svg?style=flat)](https://travis-ci.org/dan.brooker@gmail.com/VendRegisterExtension)
+[![CI Status](http://img.shields.io/travis/Vend/VendRegisterExtension.svg?style=flat)](https://travis-ci.org/Vend/VendRegisterExtension)
 [![Version](https://img.shields.io/cocoapods/v/VendRegisterExtension.svg?style=flat)](http://cocoapods.org/pods/VendRegisterExtension)
 [![License](https://img.shields.io/cocoapods/l/VendRegisterExtension.svg?style=flat)](http://cocoapods.org/pods/VendRegisterExtension)
 [![Platform](https://img.shields.io/cocoapods/p/VendRegisterExtension.svg?style=flat)](http://cocoapods.org/pods/VendRegisterExtension)
@@ -22,7 +22,7 @@ pod "VendRegisterExtension"
 
 ## Author
 
-dan.brooker@gmail.com, tom@cactuslab.com
+TomCarey, tom@cactuslab.com
 
 ## License
 

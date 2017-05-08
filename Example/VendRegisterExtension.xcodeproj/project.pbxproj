@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29A29F5357668805BBE7E1EA /* Pods_Discount_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A901101F2E1868FEB854B48 /* Pods_Discount_Example.framework */; };
 		5EE19BE0877D7042804A4375 /* Pods_VendRegisterExtension_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2638B2A43C9A032487185E /* Pods_VendRegisterExtension_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -14,6 +15,9 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		98B93CCF1EC02F67000637B4 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B93CCE1EC02F67000637B4 /* ActionViewController.swift */; };
+		98B93CD21EC02F67000637B4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B93CD01EC02F67000637B4 /* MainInterface.storyboard */; };
+		98B93CD61EC02F67000637B4 /* Discount Example.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 98B93CCC1EC02F67000637B4 /* Discount Example.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FD05997C664D99B4F1ED8260 /* Pods_VendRegisterExtension_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37DE89C962857F23D91AF5C0 /* Pods_VendRegisterExtension_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,13 +29,34 @@
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
 			remoteInfo = VendRegisterExtension;
 		};
+		98B93CD41EC02F67000637B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98B93CCB1EC02F67000637B4;
+			remoteInfo = "Discount Example";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		98B93CDA1EC02F67000637B4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				98B93CD61EC02F67000637B4 /* Discount Example.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		00D10FCE51D356F302282125 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		00D10FCE51D356F302282125 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		056525B0BC36AA4022241C2F /* Pods-VendRegisterExtension_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VendRegisterExtension_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-VendRegisterExtension_Example/Pods-VendRegisterExtension_Example.release.xcconfig"; sourceTree = "<group>"; };
 		0EF62137F06F01FBE312C488 /* Pods-VendRegisterExtension_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VendRegisterExtension_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VendRegisterExtension_Tests/Pods-VendRegisterExtension_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		2D4CCFB3D46639B6A2DFA0D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2D4CCFB3D46639B6A2DFA0D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		37DE89C962857F23D91AF5C0 /* Pods_VendRegisterExtension_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VendRegisterExtension_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* VendRegisterExtension_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VendRegisterExtension_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,10 +68,17 @@
 		607FACE51AFB9204008FA782 /* VendRegisterExtension_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VendRegisterExtension_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		6A901101F2E1868FEB854B48 /* Pods_Discount_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Discount_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7372F40F24AA9BBE56FC2CC8 /* Pods-VendRegisterExtension_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VendRegisterExtension_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VendRegisterExtension_Example/Pods-VendRegisterExtension_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		98B93CCC1EC02F67000637B4 /* Discount Example.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Discount Example.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98B93CCE1EC02F67000637B4 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		98B93CD11EC02F67000637B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		98B93CD31EC02F67000637B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E2638B2A43C9A032487185E /* Pods_VendRegisterExtension_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VendRegisterExtension_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8D1DB943B533EDDFF22C4C /* Pods-VendRegisterExtension_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VendRegisterExtension_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VendRegisterExtension_Tests/Pods-VendRegisterExtension_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DA9A1B369D333C3B83661435 /* VendRegisterExtension.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = VendRegisterExtension.podspec; path = ../VendRegisterExtension.podspec; sourceTree = "<group>"; };
+		DA9A1B369D333C3B83661435 /* VendRegisterExtension.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VendRegisterExtension.podspec; path = ../VendRegisterExtension.podspec; sourceTree = "<group>"; };
+		EF31D7133B6EA337438655AB /* Pods-Discount Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Discount Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Discount Example/Pods-Discount Example.release.xcconfig"; sourceTree = "<group>"; };
+		EFE0B79AEC05770DC519501C /* Pods-Discount Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Discount Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Discount Example/Pods-Discount Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +98,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		98B93CC91EC02F67000637B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29A29F5357668805BBE7E1EA /* Pods_Discount_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -75,6 +115,7 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for VendRegisterExtension */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				98B93CCD1EC02F67000637B4 /* Discount Example */,
 				607FACD11AFB9204008FA782 /* Products */,
 				F641C23E6100804F8D2D4A96 /* Pods */,
 				7A146880D9D8FB8EFCE7D579 /* Frameworks */,
@@ -86,6 +127,7 @@
 			children = (
 				607FACD01AFB9204008FA782 /* VendRegisterExtension_Example.app */,
 				607FACE51AFB9204008FA782 /* VendRegisterExtension_Tests.xctest */,
+				98B93CCC1EC02F67000637B4 /* Discount Example.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,8 +186,19 @@
 			children = (
 				9E2638B2A43C9A032487185E /* Pods_VendRegisterExtension_Example.framework */,
 				37DE89C962857F23D91AF5C0 /* Pods_VendRegisterExtension_Tests.framework */,
+				6A901101F2E1868FEB854B48 /* Pods_Discount_Example.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98B93CCD1EC02F67000637B4 /* Discount Example */ = {
+			isa = PBXGroup;
+			children = (
+				98B93CCE1EC02F67000637B4 /* ActionViewController.swift */,
+				98B93CD01EC02F67000637B4 /* MainInterface.storyboard */,
+				98B93CD31EC02F67000637B4 /* Info.plist */,
+			);
+			path = "Discount Example";
 			sourceTree = "<group>";
 		};
 		F641C23E6100804F8D2D4A96 /* Pods */ = {
@@ -155,6 +208,8 @@
 				056525B0BC36AA4022241C2F /* Pods-VendRegisterExtension_Example.release.xcconfig */,
 				CC8D1DB943B533EDDFF22C4C /* Pods-VendRegisterExtension_Tests.debug.xcconfig */,
 				0EF62137F06F01FBE312C488 /* Pods-VendRegisterExtension_Tests.release.xcconfig */,
+				EFE0B79AEC05770DC519501C /* Pods-Discount Example.debug.xcconfig */,
+				EF31D7133B6EA337438655AB /* Pods-Discount Example.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -172,10 +227,12 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				F12758E1B83BD64973610078 /* [CP] Embed Pods Frameworks */,
 				9620C5A167BCDA6EC2418C9F /* [CP] Copy Pods Resources */,
+				98B93CDA1EC02F67000637B4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				98B93CD51EC02F67000637B4 /* PBXTargetDependency */,
 			);
 			name = VendRegisterExtension_Example;
 			productName = VendRegisterExtension;
@@ -203,13 +260,32 @@
 			productReference = 607FACE51AFB9204008FA782 /* VendRegisterExtension_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		98B93CCB1EC02F67000637B4 /* Discount Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98B93CD71EC02F67000637B4 /* Build configuration list for PBXNativeTarget "Discount Example" */;
+			buildPhases = (
+				F19FD48DFF38676DF0D75DA1 /* [CP] Check Pods Manifest.lock */,
+				98B93CC81EC02F67000637B4 /* Sources */,
+				98B93CC91EC02F67000637B4 /* Frameworks */,
+				98B93CCA1EC02F67000637B4 /* Resources */,
+				B4D634C4C397ABFC8545DF24 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Discount Example";
+			productName = "Discount Example";
+			productReference = 98B93CCC1EC02F67000637B4 /* Discount Example.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
@@ -221,6 +297,10 @@
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+					98B93CCB1EC02F67000637B4 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -239,6 +319,7 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* VendRegisterExtension_Example */,
 				607FACE41AFB9204008FA782 /* VendRegisterExtension_Tests */,
+				98B93CCB1EC02F67000637B4 /* Discount Example */,
 			);
 		};
 /* End PBXProject section */
@@ -258,6 +339,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98B93CCA1EC02F67000637B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98B93CD21EC02F67000637B4 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +398,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VendRegisterExtension_Example/Pods-VendRegisterExtension_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B4D634C4C397ABFC8545DF24 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Discount Example/Pods-Discount Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C146F9549E5C641722F9A70C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -337,6 +441,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VendRegisterExtension_Example/Pods-VendRegisterExtension_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F19FD48DFF38676DF0D75DA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F21812B30B4D6435864B97AD /* [CP] Check Pods Manifest.lock */ = {
@@ -374,6 +493,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		98B93CC81EC02F67000637B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98B93CCF1EC02F67000637B4 /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -381,6 +508,11 @@
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* VendRegisterExtension_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+		};
+		98B93CD51EC02F67000637B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98B93CCB1EC02F67000637B4 /* Discount Example */;
+			targetProxy = 98B93CD41EC02F67000637B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -399,6 +531,14 @@
 				607FACDF1AFB9204008FA782 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		98B93CD01EC02F67000637B4 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98B93CD11EC02F67000637B4 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -495,6 +635,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7372F40F24AA9BBE56FC2CC8 /* Pods-VendRegisterExtension_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VendRegisterExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -502,6 +643,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -509,6 +651,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 056525B0BC36AA4022241C2F /* Pods-VendRegisterExtension_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VendRegisterExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -516,6 +659,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -555,6 +699,44 @@
 			};
 			name = Release;
 		};
+		98B93CD81EC02F67000637B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFE0B79AEC05770DC519501C /* Pods-Discount Example.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Discount Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.VendRegisterExtension-Example.Discount-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		98B93CD91EC02F67000637B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF31D7133B6EA337438655AB /* Pods-Discount Example.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = "Discount Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.VendRegisterExtension-Example.Discount-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -581,6 +763,15 @@
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,
 				607FACF41AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98B93CD71EC02F67000637B4 /* Build configuration list for PBXNativeTarget "Discount Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98B93CD81EC02F67000637B4 /* Debug */,
+				98B93CD91EC02F67000637B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

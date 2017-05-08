@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  VendRegisterExtension
 //
-//  Created by dan.brooker@gmail.com on 05/08/2017.
-//  Copyright (c) 2017 dan.brooker@gmail.com. All rights reserved.
+//  Created by Vend on 05/08/2017.
+//  Copyright (c) 2017 Vend. All rights reserved.
 //
 
 import UIKit

@@ -5,7 +5,9 @@ target 'VendRegisterExtension_Example' do
 
   target 'VendRegisterExtension_Tests' do
     inherit! :search_paths
-
-    
+  end
+  
+  target 'Discount Example' do
+    inherit! :search_paths
   end
 end
