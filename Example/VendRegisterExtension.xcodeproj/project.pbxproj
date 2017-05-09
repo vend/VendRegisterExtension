@@ -15,6 +15,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		982C445C1EC16C8D004CF3A5 /* LineItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982C445B1EC16C8D004CF3A5 /* LineItemCell.swift */; };
+		982C445E1EC16CE8004CF3A5 /* TotalCostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982C445D1EC16CE8004CF3A5 /* TotalCostCell.swift */; };
 		98B93CCF1EC02F67000637B4 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B93CCE1EC02F67000637B4 /* ActionViewController.swift */; };
 		98B93CD21EC02F67000637B4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B93CD01EC02F67000637B4 /* MainInterface.storyboard */; };
 		98B93CD61EC02F67000637B4 /* Discount Example.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 98B93CCC1EC02F67000637B4 /* Discount Example.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -70,6 +72,8 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6A901101F2E1868FEB854B48 /* Pods_Discount_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Discount_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7372F40F24AA9BBE56FC2CC8 /* Pods-VendRegisterExtension_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VendRegisterExtension_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VendRegisterExtension_Example/Pods-VendRegisterExtension_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		982C445B1EC16C8D004CF3A5 /* LineItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineItemCell.swift; sourceTree = "<group>"; };
+		982C445D1EC16CE8004CF3A5 /* TotalCostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalCostCell.swift; sourceTree = "<group>"; };
 		98B93CCC1EC02F67000637B4 /* Discount Example.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Discount Example.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B93CCE1EC02F67000637B4 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		98B93CD11EC02F67000637B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -195,6 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				98B93CCE1EC02F67000637B4 /* ActionViewController.swift */,
+				982C445B1EC16C8D004CF3A5 /* LineItemCell.swift */,
+				982C445D1EC16CE8004CF3A5 /* TotalCostCell.swift */,
 				98B93CD01EC02F67000637B4 /* MainInterface.storyboard */,
 				98B93CD31EC02F67000637B4 /* Info.plist */,
 			);
@@ -497,6 +503,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				982C445C1EC16C8D004CF3A5 /* LineItemCell.swift in Sources */,
+				982C445E1EC16CE8004CF3A5 /* TotalCostCell.swift in Sources */,
 				98B93CCF1EC02F67000637B4 /* ActionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

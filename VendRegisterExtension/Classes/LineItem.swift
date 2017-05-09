@@ -15,22 +15,25 @@ public struct LineItem {
     public var unitPrice: Decimal
     public var unitTax: Decimal
     public var taxIdentifier: String
+    public var name: String
     
-    public init(productIdentifier: String, quantity: Decimal, unitPrice: Decimal, unitTax: Decimal, taxIdentifier: String) {
+    public init(productIdentifier: String, quantity: Decimal, unitPrice: Decimal, unitTax: Decimal, taxIdentifier: String, name: String) {
         self.productIdentifier = productIdentifier
         self.quantity = quantity
         self.unitPrice = unitPrice
         self.unitTax = unitTax
         self.taxIdentifier = taxIdentifier
+        self.name = name
     }
 }
 
-public enum LineItemAttributes {
-    public static let productIdentifier = "identifier"
-    public static let quantity = "quantity"
-    public static let unitPrice = "unitPrice"
-    public static let unitTax = "unitTax"
-    public static let taxIdentifier = "taxIdentifier"
+private enum LineItemAttributes {
+    static let productIdentifier = "identifier"
+    static let quantity = "quantity"
+    static let unitPrice = "unitPrice"
+    static let unitTax = "unitTax"
+    static let taxIdentifier = "taxIdentifier"
+    static let name = "name"
 }
 
 extension LineItem: Decodable {
@@ -44,13 +47,13 @@ extension LineItem: Decodable {
         guard let unitTax = try Decimal(string: json => KeyPath(LineItemAttributes.unitTax)) else {
             throw VendRegisterExtensionError.failedDecimalConversion(value: LineItemAttributes.unitTax)
         }
-        return try LineItem(productIdentifier: json => KeyPath(LineItemAttributes.productIdentifier), quantity: quantity, unitPrice: unitPrice, unitTax: unitTax, taxIdentifier: json => KeyPath(LineItemAttributes.taxIdentifier))
+        return try LineItem(productIdentifier: json => KeyPath(LineItemAttributes.productIdentifier), quantity: quantity, unitPrice: unitPrice, unitTax: unitTax, taxIdentifier: json => KeyPath(LineItemAttributes.taxIdentifier), name: json => KeyPath(LineItemAttributes.name))
     }
 }
 
 
 extension LineItem: JSONRepresentable {
     public var asJsonDictionary : [String: Any] {
-        return ["identifier": productIdentifier, "quantity": quantity, "unitPrice": unitPrice, "unitTax": unitTax, "taxIdentifier": taxIdentifier]
+        return [LineItemAttributes.productIdentifier: productIdentifier, LineItemAttributes.quantity: "\(quantity)", LineItemAttributes.unitPrice: "\(unitPrice)", LineItemAttributes.unitTax: "\(unitTax)", LineItemAttributes.taxIdentifier: taxIdentifier, LineItemAttributes.name : name]
     }
 }

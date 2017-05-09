@@ -23,11 +23,11 @@ public struct Sale {
     }
 }
 
-public enum SaleAttributes {
-    public static let identifier = "identifier"
-    public static let customer = "customer"
-    public static let totals = "totals"
-    public static let lineItems = "lineItems"
+private enum SaleAttributes {
+    static let identifier = "identifier"
+    static let customer = "customer"
+    static let totals = "totals"
+    static let lineItems = "lineItems"
 }
 
 extension Sale : Decodable {
@@ -38,12 +38,12 @@ extension Sale : Decodable {
 
 extension Sale : JSONRepresentable {
     public var asJsonDictionary : [String: Any] {
-        var dictionary : [String : Any] = ["identifier" : identifier]
+        var dictionary : [String : Any] = [SaleAttributes.identifier : identifier]
         if let customer = customer {
-            dictionary["customer"] = customer.asJsonDictionary
+            dictionary[SaleAttributes.customer] = customer.asJsonDictionary
         }
-        dictionary["totals"] = totals.asJsonDictionary
-        dictionary["lineItems"] = lineItems.map({ $0.asJsonDictionary })
+        dictionary[SaleAttributes.totals] = totals.asJsonDictionary
+        dictionary[SaleAttributes.lineItems] = lineItems.map({ $0.asJsonDictionary })
         return dictionary
     }
 }

@@ -17,8 +17,8 @@ public struct Customer {
     }
 }
 
-public enum CustomerAttributes {
-    public static let identifier = "identifier"
+private enum CustomerAttributes {
+    static let identifier = "identifier"
 }
 
 extension Customer: Decodable {
@@ -31,7 +31,7 @@ extension Customer : JSONRepresentable {
     public var asJsonDictionary : [String: Any] {
         var dictionary = [String: Any]()
         if let identifier = identifier {
-            dictionary["identifier"] = identifier
+            dictionary[CustomerAttributes.identifier] = identifier
         }
         return dictionary
     }

@@ -23,11 +23,11 @@ public struct Totals {
     }
 }
 
-public enum TotalsAttributes {
-    public static let tax = "tax"
-    public static let price = "price"
-    public static let paid = "paid"
-    public static let toPay = "toPay"
+private enum TotalsAttributes {
+    static let tax = "tax"
+    static let price = "price"
+    static let paid = "paid"
+    static let toPay = "toPay"
 }
 
 extension Totals: Decodable {
@@ -50,7 +50,7 @@ extension Totals: Decodable {
 
 extension Totals : JSONRepresentable {
     public var asJsonDictionary : [String: Any] {
-        return ["tax": "\(tax)", "price": "\(price)", "paid": "\(paid)", "toPay": "\(toPay)"]
+        return [TotalsAttributes.tax: "\(tax)", TotalsAttributes.price: "\(price)", TotalsAttributes.paid: "\(paid)", TotalsAttributes.toPay: "\(toPay)"]
     }
 }
 
