@@ -22,7 +22,7 @@ pod "VendRegisterExtension"
 
 ## Author
 
-TomCarey, tom@cactuslab.com
+TomCarey
 
 ## License
 
