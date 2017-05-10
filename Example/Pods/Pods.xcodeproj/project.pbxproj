@@ -26,6 +26,7 @@
 		78B8A41216F2AEE55B98E6380A96164E /* Totals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4437ED25DC25FC3A15F88E9D514D06 /* Totals.swift */; };
 		7F9F8FD7F2899FADEC588085A1E4CEC8 /* Decodable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF9FA470F6A931D9511F1021A02ED60 /* Decodable-dummy.m */; };
 		90582A97E1A952CC0D7345259E8F6369 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93D4FE3955FA22DB2EAABD9F3EDD220 /* Foundation.framework */; };
+		98BE6F9F1EC3C2B4008AAD66 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE6F9E1EC3C2B4008AAD66 /* Constants.swift */; };
 		9D20B2BA5299A6BF3F340165C148E2AB /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E4F69E850E37B7349BED1EDBBB55F2 /* Customer.swift */; };
 		A4FAD7B56BB6246130490C9421D32081 /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82ED633402D6FDE532CDB6E0899C61A /* KeyPath.swift */; };
 		B7A0207BF8805A91A55FDB3B14E6E3D0 /* Decodable.h in Headers */ = {isa = PBXBuildFile; fileRef = ED0EB914D1763ACE1DB4341EA8FDDCF7 /* Decodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -108,6 +109,7 @@
 		8DF9FB98583F27C8156E9789673DAE93 /* VendRegisterExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VendRegisterExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		986268F98B7AA0110B6B175900D5F3AF /* VendRegisterExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VendRegisterExtension-prefix.pch"; sourceTree = "<group>"; };
+		98BE6F9E1EC3C2B4008AAD66 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9B35558E17175A902C264BCA7CCCE8FC /* Pods-VendRegisterExtension_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VendRegisterExtension_Example-frameworks.sh"; sourceTree = "<group>"; };
 		9F19C1730914FFBF6AC5ADA9262B6611 /* Pods-Discount Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Discount Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9FDA7D9929B264BE24181F6D6363D3D1 /* Pods-Discount Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Discount Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				C7E4F69E850E37B7349BED1EDBBB55F2 /* Customer.swift */,
+				98BE6F9E1EC3C2B4008AAD66 /* Constants.swift */,
 				7AF5ED89B88DC89E0947B50313983C33 /* JSONRepresentable.swift */,
 				7BA2B739469CEC534DBD23BBAA226761 /* LineItem.swift */,
 				C52120CDD272E89927CBF96E3CE9C108 /* Operations.swift */,
@@ -605,6 +608,7 @@
 				78B8A41216F2AEE55B98E6380A96164E /* Totals.swift in Sources */,
 				F8C9DCA97B2BA3832DFC9E1143F5FD24 /* VendRegisterExtension-dummy.m in Sources */,
 				BFE28246C7D2B76CE30828D485001BBC /* VendRegisterExtensionError.swift in Sources */,
+				98BE6F9F1EC3C2B4008AAD66 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

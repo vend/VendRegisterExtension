@@ -9,10 +9,19 @@
 import Foundation
 import Decodable
 
+/// The totals for the sale
 public struct Totals {
+    
+    /// The tax on the sale
     public var tax: Decimal
+    
+    /// The total price on the sale
     public var price: Decimal
+    
+    /// The amount of the sale that has already been paid
     public var paid: Decimal
+    
+    /// The remaining amount on the sale to be paid
     public var toPay: Decimal
     
     public init(tax: Decimal, price: Decimal, paid: Decimal, toPay: Decimal) {

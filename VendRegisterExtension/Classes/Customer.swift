@@ -9,7 +9,10 @@
 import Foundation
 import Decodable
 
+/// A customer associated with a sale
 public struct Customer {
+    
+    /// The Vend identifier associated with the customer
     public var identifier: String?
     
     public init(identifier: String?) {

@@ -9,10 +9,18 @@
 import Foundation
 import Decodable
 
+/// A representation of the current sale
 public struct Sale {
+    /// The Vend identifier for the sale
     public var identifier: String
+    
+    /// A customer on the sale if there is one
     public var customer: Customer?
+    
+    /// The sale totals
     public var totals: Totals
+    
+    /// The current line items associated with the sale
     public var lineItems: [LineItem]
     
     public init(identifier: String, customer: Customer? = nil, totals: Totals, lineItems: [LineItem] = []) {

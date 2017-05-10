@@ -9,12 +9,24 @@
 import Foundation
 import Decodable
 
+/// A line item associated with a sale
 public struct LineItem {
+    /// The Vend identifier for the product
     public var productIdentifier: String
+    
+    /// The quantity of the product in the sale
     public var quantity: Decimal
+    
+    /// The unit price for the line item
     public var unitPrice: Decimal
+    
+    /// The unit tax for the line item
     public var unitTax: Decimal
+    
+    /// The tax identifier associated with the line item
     public var taxIdentifier: String
+    
+    /// The name of the line item
     public var name: String
     
     public init(productIdentifier: String, quantity: Decimal, unitPrice: Decimal, unitTax: Decimal, taxIdentifier: String, name: String) {

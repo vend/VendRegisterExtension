@@ -32,9 +32,9 @@ class ActionViewController: UIViewController, UITableViewDelegate, UITableViewDa
         for item in self.extensionContext!.inputItems as! [NSExtensionItem] {
             for provider in item.attachments! as! [NSItemProvider] {
                 
-                if provider.hasItemConformingToTypeIdentifier("com.vendhq.uti-sale") {
+                if provider.hasItemConformingToTypeIdentifier(vendRegsiterExtensionFileType) {
                     
-                    provider.loadItem(forTypeIdentifier: "com.vendhq.uti-sale", options: nil, completionHandler: { (secureCoding, error) in
+                    provider.loadItem(forTypeIdentifier: vendRegsiterExtensionFileType, options: nil, completionHandler: { (secureCoding, error) in
                         
                         guard let secureCoding = secureCoding else { return }
                         
@@ -50,7 +50,7 @@ class ActionViewController: UIViewController, UITableViewDelegate, UITableViewDa
                                 }
                                 
                             } catch {
-                                print("Awesome error: \(error)")
+                                print("Error: \(error)")
                             }
                         }
                     })
