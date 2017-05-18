@@ -32,9 +32,9 @@ class ActionViewController: UIViewController, UITableViewDelegate, UITableViewDa
         for item in self.extensionContext!.inputItems as! [NSExtensionItem] {
             for provider in item.attachments! as! [NSItemProvider] {
                 
-                if provider.hasItemConformingToTypeIdentifier(vendRegsiterExtensionFileType) {
+                if provider.hasItemConformingToTypeIdentifier(vendRegisterExtensionFileType) {
                     
-                    provider.loadItem(forTypeIdentifier: vendRegsiterExtensionFileType, options: nil, completionHandler: { (secureCoding, error) in
+                    provider.loadItem(forTypeIdentifier: vendRegisterExtensionFileType, options: nil, completionHandler: { (secureCoding, error) in
                         
                         guard let secureCoding = secureCoding else { return }
                         

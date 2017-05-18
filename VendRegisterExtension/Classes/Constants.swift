@@ -9,4 +9,4 @@
 import Foundation
 
 /// The file type that VendRegisterExtension is designed to handle
-public let vendRegsiterExtensionFileType = "com.vendhq.uti-sale"
+public let vendRegisterExtensionFileType = "com.vendhq.uti-sale"
