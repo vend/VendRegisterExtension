@@ -11,6 +11,7 @@ import Foundation
 private enum ExtensionKeys {
     static let operation = "operation"
     static let parameters = "parameters"
+    static let version = "version"
 }
 
 /// The available operations to third-party integrators. VendRegister will only handle the operations listed below.
@@ -32,6 +33,7 @@ public enum VendRegisterExtensionOperation {
         
         var dict = [String: Any]()
         dict[ExtensionKeys.operation] = self.operationName
+        dict[ExtensionKeys.version] = 1.0
         
         switch self {
         case .addLineItems(let lineItems):
