@@ -50,19 +50,14 @@ private enum LineItemAttributes {
 
 extension LineItem: Decodable {
     public static func decode(_ json: Any) throws -> LineItem {
-        guard let quantity = try Decimal(string: json => KeyPath(LineItemAttributes.quantity)) else {
-            throw VendRegisterExtensionError.failedDecimalConversion(attribute: LineItemAttributes.quantity, value: try json => KeyPath(LineItemAttributes.quantity))
-        }
-        guard let unitPrice = try Decimal(string: json => KeyPath(LineItemAttributes.unitPrice)) else {
-            throw VendRegisterExtensionError.failedDecimalConversion(attribute: LineItemAttributes.unitPrice, value: try json => KeyPath(LineItemAttributes.unitPrice))
-        }
-        guard let unitTax = try Decimal(string: json => KeyPath(LineItemAttributes.unitTax)) else {
-            throw VendRegisterExtensionError.failedDecimalConversion(attribute: LineItemAttributes.unitTax, value: try json => KeyPath(LineItemAttributes.unitTax))
-        }
-        return try LineItem(productIdentifier: json => KeyPath(LineItemAttributes.productIdentifier), quantity: quantity, unitPrice: unitPrice, unitTax: unitTax, taxIdentifier: json => KeyPath(LineItemAttributes.taxIdentifier), name: json => KeyPath(LineItemAttributes.name))
+        return try LineItem(productIdentifier: json => KeyPath(LineItemAttributes.productIdentifier),
+                            quantity: json => KeyPath(LineItemAttributes.quantity),
+                            unitPrice: json => KeyPath(LineItemAttributes.unitPrice),
+                            unitTax: json => KeyPath(LineItemAttributes.unitTax),
+                            taxIdentifier: json => KeyPath(LineItemAttributes.taxIdentifier),
+                            name: json => KeyPath(LineItemAttributes.name))
     }
 }
-
 
 extension LineItem: JSONRepresentable {
     public var asJsonDictionary : [String: Any] {

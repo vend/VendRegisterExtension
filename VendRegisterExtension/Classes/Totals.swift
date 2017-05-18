@@ -41,19 +41,10 @@ private enum TotalsAttributes {
 
 extension Totals: Decodable {
     public static func decode(_ json: Any) throws -> Totals {
-        guard let tax = try Decimal(string: json => KeyPath(TotalsAttributes.tax)) else {
-            throw VendRegisterExtensionError.failedDecimalConversion(attribute: TotalsAttributes.tax, value: try json => KeyPath(TotalsAttributes.tax))
-        }
-        guard let price = try Decimal(string: json => KeyPath(TotalsAttributes.price)) else {
-            throw VendRegisterExtensionError.failedDecimalConversion(attribute: TotalsAttributes.price, value: try json => KeyPath(TotalsAttributes.price))
-        }
-        guard let paid = try Decimal(string: json => KeyPath(TotalsAttributes.paid)) else {
-            throw VendRegisterExtensionError.failedDecimalConversion(attribute: TotalsAttributes.paid, value: try json => KeyPath(TotalsAttributes.paid))
-        }
-        guard let toPay = try Decimal(string: json => KeyPath(TotalsAttributes.toPay)) else {
-            throw VendRegisterExtensionError.failedDecimalConversion(attribute: TotalsAttributes.toPay, value: try json => KeyPath(TotalsAttributes.toPay))
-        }
-        return Totals(tax: tax, price: price, paid: paid, toPay: toPay)
+        return try Totals(tax: json => KeyPath(TotalsAttributes.tax),
+                          price: json => KeyPath(TotalsAttributes.price),
+                          paid: json => KeyPath(TotalsAttributes.paid),
+                          toPay: json => KeyPath(TotalsAttributes.toPay))
     }
 }
 
