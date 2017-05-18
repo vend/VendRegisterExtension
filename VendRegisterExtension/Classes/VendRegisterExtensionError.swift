@@ -12,5 +12,5 @@ import Foundation
 public enum VendRegisterExtensionError: Error {
     
     /// It was not possible to convert a string value into a decimal
-    case failedDecimalConversion(value: String)
+    case failedDecimalConversion(attribute: String, value: String?)
 }
