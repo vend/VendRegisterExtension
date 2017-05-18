@@ -21,6 +21,7 @@ class ActionViewController: UIViewController, UITableViewDelegate, UITableViewDa
             }
         }
     }
+    @IBOutlet weak var addItemButton: UIBarButtonItem!
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -46,6 +47,12 @@ class ActionViewController: UIViewController, UITableViewDelegate, UITableViewDa
                                         let sale = try Sale.decode(saleJson)
                                         print("Got my sale: \(sale)")
                                         self.sale = sale
+                                    }
+                                    if let version = jsonDict["version"] as? Int {
+                                        
+                                        // A good citizen should determine which operations are supported by the current installation and respond accordingly
+                                        // In this case we are enabling the button to add an item based on whether the .addLineItems operation is supported
+                                        self.addItemButton.isEnabled = VendRegisterExtensionOperationName.availableOperations(api: version).contains(.addLineItems)
                                     }
                                 }
                                 

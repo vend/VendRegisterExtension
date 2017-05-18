@@ -14,6 +14,19 @@ private enum ExtensionKeys {
     static let version = "version"
 }
 
+/// A convenience enum to type safe the name of the operation and determine which operations are supported by the current Vend Register installation
+public enum VendRegisterExtensionOperationName : String {
+    case addLineItems
+    
+    public static func availableOperations(api: Int) -> [VendRegisterExtensionOperationName] {
+        var operations = [VendRegisterExtensionOperationName]()
+        if api >= 1 {
+            operations.append(.addLineItems)
+        }
+        return operations
+    }
+}
+
 /// The available operations to third-party integrators. VendRegister will only handle the operations listed below.
 public enum VendRegisterExtensionOperation {
     
@@ -21,9 +34,9 @@ public enum VendRegisterExtensionOperation {
     case addLineItems([LineItem])
     
     /// A key to use in the NSExtensionItem so that we can recognise the operation
-    var operationName : String {
+    var operationName : VendRegisterExtensionOperationName {
         switch self {
-        case .addLineItems(_): return "addLineItems"
+        case .addLineItems(_): return .addLineItems
         }
     }
     
@@ -32,7 +45,7 @@ public enum VendRegisterExtensionOperation {
         let item = NSExtensionItem()
         
         var dict = [String: Any]()
-        dict[ExtensionKeys.operation] = self.operationName
+        dict[ExtensionKeys.operation] = self.operationName.rawValue
         dict[ExtensionKeys.version] = 1.0
         
         switch self {
@@ -44,5 +57,6 @@ public enum VendRegisterExtensionOperation {
         
         return item
     }
+
     
 }
