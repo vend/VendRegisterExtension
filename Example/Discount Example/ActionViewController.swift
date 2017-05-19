@@ -2,8 +2,8 @@
 //  ActionViewController.swift
 //  Discount Example
 //
-//  Created by Thomas Carey on 8/05/17.
-//  Copyright © 2017 CocoaPods. All rights reserved.
+//  Created by Vend on 05/08/2017.
+//  Copyright (c) 2017 Vend. All rights reserved.
 //
 
 import UIKit

@@ -1,9 +1,9 @@
 //
 //  Sale.swift
-//  Pods
+//  VendRegisterExtension
 //
-//  Created by Thomas Carey on 8/05/17.
-//
+//  Created by Vend on 05/08/2017.
+//  Copyright (c) 2017 Vend. All rights reserved.
 //
 
 import Foundation

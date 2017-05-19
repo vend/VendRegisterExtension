@@ -2,8 +2,8 @@
 //  TotalCostCell.swift
 //  VendRegisterExtension
 //
-//  Created by Thomas Carey on 9/05/17.
-//  Copyright © 2017 CocoaPods. All rights reserved.
+//  Created by Vend on 05/08/2017.
+//  Copyright (c) 2017 Vend. All rights reserved.
 //
 
 import UIKit
