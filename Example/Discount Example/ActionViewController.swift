@@ -43,8 +43,9 @@ class ActionViewController: UIViewController, UITableViewDelegate, UITableViewDa
                             do {
                                 let json = try JSONSerialization.jsonObject(with: data, options: [])
                                 if let jsonDict = json as? [String : Any] {
-                                    if let saleJson = jsonDict["payload"] as? [String: Any] {
-                                        let sale = try Sale.decode(saleJson)
+                                    if let dataJson = jsonDict["payload"] as? [String: Any] {
+                                        let payload = try Payload.decode(dataJson)
+                                        let sale = payload.sale
                                         print("Got my sale: \(sale)")
                                         self.sale = sale
                                     }

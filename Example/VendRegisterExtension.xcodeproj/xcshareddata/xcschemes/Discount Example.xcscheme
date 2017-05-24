@@ -67,8 +67,12 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "1"
+         BundleIdentifier = "com.vendhq.register"
+         RemotePath = "/Users/thomascarey/Library/Developer/CoreSimulator/Devices/5D59020E-BB6E-45E4-9266-4A483E49D6D0/data/Containers/Bundle/Application/CCD91FFD-3658-43ED-9436-0F5C01C4E9C7/VendRegister.app">
+      </RemoteRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
@@ -76,7 +80,7 @@
             BlueprintName = "VendRegisterExtension_Example"
             ReferencedContainer = "container:VendRegisterExtension.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

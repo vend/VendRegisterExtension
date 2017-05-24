@@ -10,40 +10,42 @@
 		0FA6CDEAA42744B41FBE90A14ABD1D3A /* DecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8152F380E237DF902B32275AB1E1467E /* DecodingError.swift */; };
 		1E834E931C5E18291CAE7C94258B1818 /* Overloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0976BF7586012C40B546215589E95E /* Overloads.swift */; };
 		25D28E7472D2CB5B576672F6DFB65DCE /* Pods-VendRegisterExtension_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16DC30FE633D65B9D39972E6F981EA24 /* Pods-VendRegisterExtension_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27535EA4556D9E8B1D70B3AA5883528F /* VendRegisterExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1554DF512E760CEED68FADDF15CBFDCB /* VendRegisterExtension-dummy.m */; };
+		276B559C601ED02EEB81A479E49CF6C8 /* Decimal+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4D78D2F178F5111234E0CE8D174423 /* Decimal+Decodable.swift */; };
 		2A105616C04250183CF4178E0E0AC0ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93D4FE3955FA22DB2EAABD9F3EDD220 /* Foundation.framework */; };
+		32BAA18153215450B3D02A3653479F49 /* VendRegisterExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1554DF512E760CEED68FADDF15CBFDCB /* VendRegisterExtension-dummy.m */; };
 		3A2B5C0EFEDD9CF9B05D211E1AA2154D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93D4FE3955FA22DB2EAABD9F3EDD220 /* Foundation.framework */; };
 		443F513AF10D4F59E750C56B245B00A6 /* OptionalKeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4DDC0F4ED01BA5D17BF0FAD619CC7 /* OptionalKeyPath.swift */; };
 		4975011DB4DE57FAEC6246D6E2C32EDE /* VendRegisterExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B826282311B27F8CA0E4FD7E11C77D2 /* VendRegisterExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FAEFF0A5CEED742FDB9FFC7F451AF5E /* Castable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5A36C0DA7FF17808C11C3BE17197D /* Castable.swift */; };
+		5098908C4F0DDE8411A11E382AE75D58 /* Totals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF93EE6A955726E70A7D9FC1B1927E /* Totals.swift */; };
+		530FBC354FC1B5281D477E0DF3E21EE5 /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A09E30E8001E46A8F13A38C883CE52 /* Operations.swift */; };
 		5630AA4579C157E87F55FD5D2A859E5C /* Decodable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E1A6A571BF2D8C7F4A83B57464FE131 /* Decodable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58B9FC409507183D2BBC861737C239A3 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE94A4EB5A0E17FB8B90324C8BB23D04 /* Operators.swift */; };
 		594FADFB5DC801920C23F8361148F5A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93D4FE3955FA22DB2EAABD9F3EDD220 /* Foundation.framework */; };
 		5C99E337DF117E16DCDDF40C9257D6FB /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC86ADF2AB872EBA0921404E80D787A /* Decodable.swift */; };
+		616E8CECBD9DA96DB1B296EA2DF6776D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F832906EC31667534B46B6887A809A /* Constants.swift */; };
 		647F9D3CFD5E2714C15AE3382110ACC8 /* Pods-VendRegisterExtension_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 074E62EBCEC15DB7708973A99EEC8874 /* Pods-VendRegisterExtension_Example-dummy.m */; };
 		6BAA5222C5B4F340659406039C6C226F /* Pods-VendRegisterExtension_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E907BFC33EB1DAD366B457D329E8F5FA /* Pods-VendRegisterExtension_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		70D345DE41D046533DCA2FD352B84F6F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE60CF779C6A5054C5A1356046851CA4 /* Constants.swift */; };
+		759D4E3EB2E5ECFCD48B2BAAC2D26B58 /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0522B1CD5FDD10EE7C99145E0F5AD5 /* Sale.swift */; };
 		7F9F8FD7F2899FADEC588085A1E4CEC8 /* Decodable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF9FA470F6A931D9511F1021A02ED60 /* Decodable-dummy.m */; };
+		81410391D31F1623F69EB4C9178AB342 /* LineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165B76E028221B2C5DF5A7613D891D1B /* LineItem.swift */; };
 		90582A97E1A952CC0D7345259E8F6369 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93D4FE3955FA22DB2EAABD9F3EDD220 /* Foundation.framework */; };
-		968486F7DC96C02CF50874402AA31672 /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD445355A25A29DF551360A492C1D906 /* Operations.swift */; };
-		9A948DD7024DD3F7313676BFBF2E4197 /* Totals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC91231C677A3E3EA8D554E36340AC0 /* Totals.swift */; };
-		A15A67DEFFE2232FC8306A9E5A6061C5 /* LineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639EFE297693EC8AC22A7CD4394E2A44 /* LineItem.swift */; };
+		97AC7CB6816F86CAE7F4AC5192E81C13 /* VendRegisterExtensionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA7F18EED29CE805263DA3178F1D176 /* VendRegisterExtensionError.swift */; };
+		9CE3C51438F1C1D5D63EAE113A05C2C1 /* Retailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68DA3055D7E17C4CC5595D7C9BBCF8 /* Retailer.swift */; };
 		A4FAD7B56BB6246130490C9421D32081 /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82ED633402D6FDE532CDB6E0899C61A /* KeyPath.swift */; };
+		B5D024AE18918CC248CE435B62ADA7E1 /* JSONRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4836E9AD1434136BD1546A61572874E5 /* JSONRepresentable.swift */; };
 		B7A0207BF8805A91A55FDB3B14E6E3D0 /* Decodable.h in Headers */ = {isa = PBXBuildFile; fileRef = ED0EB914D1763ACE1DB4341EA8FDDCF7 /* Decodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8604A7901896BBC2D3BD4ABA2267AF4 /* Decoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0AA213050A82CEA5B4D02D82E21628 /* Decoders.swift */; };
 		C00A753304B2DAB17D1878C791D7CEA0 /* Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFDE683D0FE428E464F05E6A6541A67 /* Parse.swift */; };
 		C0785B5F740BDEC50396CE9494F26053 /* RawRepresentableDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04D9E75D9790FAB9CB54591333D934 /* RawRepresentableDecodable.swift */; };
-		C3C5CE4911A1E85A37074856E8488259 /* Decimal+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA248EAEFD705E183B54A4E19374375 /* Decimal+Decodable.swift */; };
 		C4420E4FAD071A9EC3E541635BEF966F /* Pods-Discount Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 333DB8A6A68FF328756A4568C185DBA6 /* Pods-Discount Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C53765502486DBCD23270A0A80F53F30 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3758619F06FEAAAEFC5D6335B3F8A718 /* Customer.swift */; };
-		C6AAE88F0C91A2ED0F09B4E2CFAC78C0 /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C71883F12EC08F92758F6BD9E193185 /* Sale.swift */; };
+		C5A3DE8F303662EEB4BC5164D7C3106B /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64EB30339DC29748C2B8534C606B075 /* Customer.swift */; };
 		D9BB4DDC3072516D1D94BCB49AAC7889 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93D4FE3955FA22DB2EAABD9F3EDD220 /* Foundation.framework */; };
 		E31D495E1D083D35B5674BBE05E0EC6B /* Decodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 502282ABBC604B8281D1B64E58968454 /* Decodable.framework */; };
 		E337C22ED0396EC4C101AAA01EA7103E /* Pods-Discount Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DC50205D020F06DBD93F6305311A99 /* Pods-Discount Example-dummy.m */; };
 		E4FE05BA8D015FBDCC3A61034A612575 /* Pods-VendRegisterExtension_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 343D5D06E3E4DB4D41A925893ABA36F4 /* Pods-VendRegisterExtension_Tests-dummy.m */; };
-		EB3775615CD95676ACBC1386D31AE0CB /* VendRegisterExtensionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28985DB32DFE69CAEB8E795D7F3EE0D9 /* VendRegisterExtensionError.swift */; };
-		EDF7AB48315E8238B1E4037A76F0F6D1 /* JSONRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E325B8C3C653239413854962FD76C /* JSONRepresentable.swift */; };
 		EE6FA2289CBD0AD78ABA32A4895B4977 /* NSValueCastable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D4FC340024A3868A54D1F56655BA06 /* NSValueCastable.swift */; };
+		EF3ED0F19A0607C11CA213AA472358EB /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F6DB656298A27C8A27BD5F19EA8246 /* Payload.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,34 +78,33 @@
 		06739D23CA5E9B497ABA814DDA90D522 /* Decodable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Decodable.modulemap; sourceTree = "<group>"; };
 		06BFDE2E48E7372AFCF127FB16631155 /* Pods-VendRegisterExtension_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VendRegisterExtension_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		074E62EBCEC15DB7708973A99EEC8874 /* Pods-VendRegisterExtension_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VendRegisterExtension_Example-dummy.m"; sourceTree = "<group>"; };
-		143E325B8C3C653239413854962FD76C /* JSONRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JSONRepresentable.swift; sourceTree = "<group>"; };
 		1554DF512E760CEED68FADDF15CBFDCB /* VendRegisterExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VendRegisterExtension-dummy.m"; sourceTree = "<group>"; };
 		15AA80169F2BBD71BBB55FE46F3DA037 /* Pods-VendRegisterExtension_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VendRegisterExtension_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		15F28C797F39301A6AC7A623D5CC9BFF /* Pods-VendRegisterExtension_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VendRegisterExtension_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		165B76E028221B2C5DF5A7613D891D1B /* LineItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineItem.swift; sourceTree = "<group>"; };
 		16DC30FE633D65B9D39972E6F981EA24 /* Pods-VendRegisterExtension_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VendRegisterExtension_Example-umbrella.h"; sourceTree = "<group>"; };
-		28985DB32DFE69CAEB8E795D7F3EE0D9 /* VendRegisterExtensionError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VendRegisterExtensionError.swift; sourceTree = "<group>"; };
 		2C4708B42170C99456EB96C5BEACBAE7 /* Pods-VendRegisterExtension_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VendRegisterExtension_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2D6C912D16B75620F97A9F14D9E7CDBF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3332343C615200DEE31DAF68E3DE4336 /* Pods_VendRegisterExtension_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VendRegisterExtension_Tests.framework; path = "Pods-VendRegisterExtension_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		333DB8A6A68FF328756A4568C185DBA6 /* Pods-Discount Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Discount Example-umbrella.h"; sourceTree = "<group>"; };
 		343D5D06E3E4DB4D41A925893ABA36F4 /* Pods-VendRegisterExtension_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VendRegisterExtension_Tests-dummy.m"; sourceTree = "<group>"; };
-		3758619F06FEAAAEFC5D6335B3F8A718 /* Customer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		3866760BB86F1658B8485309B2D43658 /* Pods-VendRegisterExtension_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VendRegisterExtension_Tests.modulemap"; sourceTree = "<group>"; };
-		3C71883F12EC08F92758F6BD9E193185 /* Sale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Sale.swift; sourceTree = "<group>"; };
+		3BDF93EE6A955726E70A7D9FC1B1927E /* Totals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Totals.swift; sourceTree = "<group>"; };
 		3E50B65EA69F72040E23882419687EA0 /* Pods_Discount_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Discount_Example.framework; path = "Pods-Discount Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4836E9AD1434136BD1546A61572874E5 /* JSONRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JSONRepresentable.swift; sourceTree = "<group>"; };
 		502282ABBC604B8281D1B64E58968454 /* Decodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Decodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A645F85FB52C0E0A2D34F049E9B3177 /* Pods-VendRegisterExtension_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VendRegisterExtension_Tests-resources.sh"; sourceTree = "<group>"; };
 		60A26F06465758E7079E6723A227005D /* Decodable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Decodable-prefix.pch"; sourceTree = "<group>"; };
-		639EFE297693EC8AC22A7CD4394E2A44 /* LineItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineItem.swift; sourceTree = "<group>"; };
 		697BB92F5DE7EC0BE9099ABB1DF422BC /* Pods-VendRegisterExtension_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VendRegisterExtension_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6B826282311B27F8CA0E4FD7E11C77D2 /* VendRegisterExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VendRegisterExtension-umbrella.h"; sourceTree = "<group>"; };
 		6E1A6A571BF2D8C7F4A83B57464FE131 /* Decodable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Decodable-umbrella.h"; sourceTree = "<group>"; };
 		7A6E990C5F83F1D6E2BECC5B632B64EB /* Pods-Discount Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Discount Example-resources.sh"; sourceTree = "<group>"; };
+		7F0522B1CD5FDD10EE7C99145E0F5AD5 /* Sale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Sale.swift; sourceTree = "<group>"; };
 		80D5A36C0DA7FF17808C11C3BE17197D /* Castable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Castable.swift; path = Sources/Castable.swift; sourceTree = "<group>"; };
 		8152F380E237DF902B32275AB1E1467E /* DecodingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecodingError.swift; path = Sources/DecodingError.swift; sourceTree = "<group>"; };
 		83967F59B3E26D0CCF1F32EFBDD69A9A /* Pods-Discount Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Discount Example.release.xcconfig"; sourceTree = "<group>"; };
+		85A09E30E8001E46A8F13A38C883CE52 /* Operations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Operations.swift; sourceTree = "<group>"; };
 		8840AE2BF097B5B3349F763100B8880D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8AC91231C677A3E3EA8D554E36340AC0 /* Totals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Totals.swift; sourceTree = "<group>"; };
 		8B0AA213050A82CEA5B4D02D82E21628 /* Decoders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoders.swift; path = Sources/Decoders.swift; sourceTree = "<group>"; };
 		8BF9FA470F6A931D9511F1021A02ED60 /* Decodable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Decodable-dummy.m"; sourceTree = "<group>"; };
 		8C2602C97076A98A9B7726D3D7F3F550 /* Pods_VendRegisterExtension_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VendRegisterExtension_Example.framework; path = "Pods-VendRegisterExtension_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,33 +113,36 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		986268F98B7AA0110B6B175900D5F3AF /* VendRegisterExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VendRegisterExtension-prefix.pch"; sourceTree = "<group>"; };
 		9B35558E17175A902C264BCA7CCCE8FC /* Pods-VendRegisterExtension_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VendRegisterExtension_Example-frameworks.sh"; sourceTree = "<group>"; };
+		9CA7F18EED29CE805263DA3178F1D176 /* VendRegisterExtensionError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VendRegisterExtensionError.swift; sourceTree = "<group>"; };
 		9F19C1730914FFBF6AC5ADA9262B6611 /* Pods-Discount Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Discount Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9FDA7D9929B264BE24181F6D6363D3D1 /* Pods-Discount Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Discount Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A634E7633D736ECE7BABD40C58399097 /* VendRegisterExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VendRegisterExtension.xcconfig; sourceTree = "<group>"; };
 		A8D7C3462F749A56B74B7C7F984D598D /* Pods-VendRegisterExtension_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VendRegisterExtension_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		ABED17607CF93E7D308DB80DCDA1569B /* VendRegisterExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = VendRegisterExtension.modulemap; sourceTree = "<group>"; };
 		B336C5FFDAD6B01B5AE163BAEB424169 /* Pods-Discount Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Discount Example.modulemap"; sourceTree = "<group>"; };
+		B4F832906EC31667534B46B6887A809A /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B6D4FC340024A3868A54D1F56655BA06 /* NSValueCastable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSValueCastable.swift; path = Sources/NSValueCastable.swift; sourceTree = "<group>"; };
 		BC0976BF7586012C40B546215589E95E /* Overloads.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Overloads.swift; path = Sources/Overloads.swift; sourceTree = "<group>"; };
-		BD445355A25A29DF551360A492C1D906 /* Operations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Operations.swift; sourceTree = "<group>"; };
 		BFFDE683D0FE428E464F05E6A6541A67 /* Parse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parse.swift; path = Sources/Parse.swift; sourceTree = "<group>"; };
 		C46839DA5A49B180FF7BAA63305792CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C64EB30339DC29748C2B8534C606B075 /* Customer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		C93D4FE3955FA22DB2EAABD9F3EDD220 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CB14B7FB646E8D734A2769B39E9B360E /* Pods-VendRegisterExtension_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VendRegisterExtension_Example-resources.sh"; sourceTree = "<group>"; };
 		CC4DD6D6979F4009904FBB33737430F2 /* Pods-Discount Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Discount Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		CE04D9E75D9790FAB9CB54591333D934 /* RawRepresentableDecodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RawRepresentableDecodable.swift; path = Sources/RawRepresentableDecodable.swift; sourceTree = "<group>"; };
 		CFC4DDC0F4ED01BA5D17BF0FAD619CC7 /* OptionalKeyPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionalKeyPath.swift; path = Sources/OptionalKeyPath.swift; sourceTree = "<group>"; };
+		D3F6DB656298A27C8A27BD5F19EA8246 /* Payload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
 		D82ED633402D6FDE532CDB6E0899C61A /* KeyPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyPath.swift; path = Sources/KeyPath.swift; sourceTree = "<group>"; };
 		D9DC50205D020F06DBD93F6305311A99 /* Pods-Discount Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Discount Example-dummy.m"; sourceTree = "<group>"; };
-		DEA248EAEFD705E183B54A4E19374375 /* Decimal+Decodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Decimal+Decodable.swift"; sourceTree = "<group>"; };
 		E0136D01AD5AA188A879DB99C0A40C54 /* Pods-VendRegisterExtension_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VendRegisterExtension_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		E2CC8A4491DD619B2D2C985F453D6225 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E83970B82EB93BC3F4871ECBDF0A47AF /* Decodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Decodable.framework; path = Decodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E907BFC33EB1DAD366B457D329E8F5FA /* Pods-VendRegisterExtension_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VendRegisterExtension_Tests-umbrella.h"; sourceTree = "<group>"; };
 		ED0EB914D1763ACE1DB4341EA8FDDCF7 /* Decodable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Decodable.h; path = Sources/Decodable.h; sourceTree = "<group>"; };
-		EE60CF779C6A5054C5A1356046851CA4 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ED4D78D2F178F5111234E0CE8D174423 /* Decimal+Decodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Decimal+Decodable.swift"; sourceTree = "<group>"; };
 		EEB7D2A986C5C0A990D4410267135C2D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFE1301466184CE9D27BB1E7C6EE5C21 /* Pods-VendRegisterExtension_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VendRegisterExtension_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA68DA3055D7E17C4CC5595D7C9BBCF8 /* Retailer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Retailer.swift; sourceTree = "<group>"; };
 		FB067106066057FF5A45F85BDD3AEB47 /* Pods-VendRegisterExtension_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VendRegisterExtension_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FE94A4EB5A0E17FB8B90324C8BB23D04 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,10 +202,10 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		17F203DF7E81564464AD524FDE8ACAE0 /* VendRegisterExtension */ = {
+		36B3CFB051DD050FB1409DE9113FA009 /* VendRegisterExtension */ = {
 			isa = PBXGroup;
 			children = (
-				9543A58BAD0719FA3E7FE4D156050491 /* Classes */,
+				7F20FE03F579412EE66B7618F32B460B /* Classes */,
 			);
 			name = VendRegisterExtension;
 			path = VendRegisterExtension;
@@ -284,29 +288,31 @@
 			);
 			sourceTree = "<group>";
 		};
+		7F20FE03F579412EE66B7618F32B460B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B4F832906EC31667534B46B6887A809A /* Constants.swift */,
+				C64EB30339DC29748C2B8534C606B075 /* Customer.swift */,
+				ED4D78D2F178F5111234E0CE8D174423 /* Decimal+Decodable.swift */,
+				4836E9AD1434136BD1546A61572874E5 /* JSONRepresentable.swift */,
+				165B76E028221B2C5DF5A7613D891D1B /* LineItem.swift */,
+				85A09E30E8001E46A8F13A38C883CE52 /* Operations.swift */,
+				D3F6DB656298A27C8A27BD5F19EA8246 /* Payload.swift */,
+				FA68DA3055D7E17C4CC5595D7C9BBCF8 /* Retailer.swift */,
+				7F0522B1CD5FDD10EE7C99145E0F5AD5 /* Sale.swift */,
+				3BDF93EE6A955726E70A7D9FC1B1927E /* Totals.swift */,
+				9CA7F18EED29CE805263DA3178F1D176 /* VendRegisterExtensionError.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		9280BF2BBA8774DE002A4EAB30957B74 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				C93D4FE3955FA22DB2EAABD9F3EDD220 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		9543A58BAD0719FA3E7FE4D156050491 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				EE60CF779C6A5054C5A1356046851CA4 /* Constants.swift */,
-				3758619F06FEAAAEFC5D6335B3F8A718 /* Customer.swift */,
-				DEA248EAEFD705E183B54A4E19374375 /* Decimal+Decodable.swift */,
-				143E325B8C3C653239413854962FD76C /* JSONRepresentable.swift */,
-				639EFE297693EC8AC22A7CD4394E2A44 /* LineItem.swift */,
-				BD445355A25A29DF551360A492C1D906 /* Operations.swift */,
-				3C71883F12EC08F92758F6BD9E193185 /* Sale.swift */,
-				8AC91231C677A3E3EA8D554E36340AC0 /* Totals.swift */,
-				28985DB32DFE69CAEB8E795D7F3EE0D9 /* VendRegisterExtensionError.swift */,
-			);
-			name = Classes;
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		9B44C98525C903E989AF90255C981F24 /* Support Files */ = {
@@ -327,7 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				3F12BD5C4DA5CCD3ACB9B7E11722A422 /* Support Files */,
-				17F203DF7E81564464AD524FDE8ACAE0 /* VendRegisterExtension */,
+				36B3CFB051DD050FB1409DE9113FA009 /* VendRegisterExtension */,
 			);
 			name = VendRegisterExtension;
 			path = ../..;
@@ -461,7 +467,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDF647D194CA6A3BF12E24F689CBEBD3 /* Build configuration list for PBXNativeTarget "VendRegisterExtension" */;
 			buildPhases = (
-				3FE1A341075D398CBEAF5D376B9D4018 /* Sources */,
+				C41A49388798051F6801E3DA095E3358 /* Sources */,
 				262E954D1EA7D1D6C4753F2937A7525C /* Frameworks */,
 				4E0E1F41C9867B6C1FAFA6F466F6CE36 /* Headers */,
 			);
@@ -575,23 +581,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3FE1A341075D398CBEAF5D376B9D4018 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				70D345DE41D046533DCA2FD352B84F6F /* Constants.swift in Sources */,
-				C53765502486DBCD23270A0A80F53F30 /* Customer.swift in Sources */,
-				C3C5CE4911A1E85A37074856E8488259 /* Decimal+Decodable.swift in Sources */,
-				EDF7AB48315E8238B1E4037A76F0F6D1 /* JSONRepresentable.swift in Sources */,
-				A15A67DEFFE2232FC8306A9E5A6061C5 /* LineItem.swift in Sources */,
-				968486F7DC96C02CF50874402AA31672 /* Operations.swift in Sources */,
-				C6AAE88F0C91A2ED0F09B4E2CFAC78C0 /* Sale.swift in Sources */,
-				9A948DD7024DD3F7313676BFBF2E4197 /* Totals.swift in Sources */,
-				27535EA4556D9E8B1D70B3AA5883528F /* VendRegisterExtension-dummy.m in Sources */,
-				EB3775615CD95676ACBC1386D31AE0CB /* VendRegisterExtensionError.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4F459DAA9B7B705949E889F065C8E9C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -616,6 +605,25 @@
 				1E834E931C5E18291CAE7C94258B1818 /* Overloads.swift in Sources */,
 				C00A753304B2DAB17D1878C791D7CEA0 /* Parse.swift in Sources */,
 				C0785B5F740BDEC50396CE9494F26053 /* RawRepresentableDecodable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C41A49388798051F6801E3DA095E3358 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616E8CECBD9DA96DB1B296EA2DF6776D /* Constants.swift in Sources */,
+				C5A3DE8F303662EEB4BC5164D7C3106B /* Customer.swift in Sources */,
+				276B559C601ED02EEB81A479E49CF6C8 /* Decimal+Decodable.swift in Sources */,
+				B5D024AE18918CC248CE435B62ADA7E1 /* JSONRepresentable.swift in Sources */,
+				81410391D31F1623F69EB4C9178AB342 /* LineItem.swift in Sources */,
+				530FBC354FC1B5281D477E0DF3E21EE5 /* Operations.swift in Sources */,
+				EF3ED0F19A0607C11CA213AA472358EB /* Payload.swift in Sources */,
+				9CE3C51438F1C1D5D63EAE113A05C2C1 /* Retailer.swift in Sources */,
+				759D4E3EB2E5ECFCD48B2BAAC2D26B58 /* Sale.swift in Sources */,
+				5098908C4F0DDE8411A11E382AE75D58 /* Totals.swift in Sources */,
+				32BAA18153215450B3D02A3653479F49 /* VendRegisterExtension-dummy.m in Sources */,
+				97AC7CB6816F86CAE7F4AC5192E81C13 /* VendRegisterExtensionError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
