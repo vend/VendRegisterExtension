@@ -25,17 +25,7 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>NSExtensionActivationRule</key>
-			<string>SUBQUERY (
-                    extensionItems,
-                    $extensionItem,
-                    SUBQUERY (
-                    $extensionItem.attachments,
-                    $attachment,
-                    (
-                    ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;com.vendhq.uti-sale&quot;
-                    )
-                    ).@count == $extensionItem.attachments.@count
-                    ).@count == 1</string>
+			<string>SUBQUERY (extensionItems, $extensionItem, SUBQUERY ($extensionItem.attachments, $attachment, ANY $attachment.registeredTypeIdentifiers UTI-EQUALS "com.vendhq.uti-sale" ).@count == $extensionItem.attachments.@count ).@count == 1</string>
 		</dict>
 		<key>NSExtensionMainStoryboard</key>
 		<string>MainInterface</string>
