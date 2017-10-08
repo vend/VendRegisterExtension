@@ -43,7 +43,9 @@ class ActionViewController: UIViewController, UITableViewDelegate, UITableViewDa
                             do {
                                 let decoder = JSONDecoder()
                                 
-                                let jsonString = String.init(data: data, encoding: String.Encoding.utf8)
+                                if let jsonString = String.init(data: data, encoding: String.Encoding.utf8) {
+                                    print("Got this JSON from VendRegister: \(jsonString)")
+                                }
                                 
                                 let root = try decoder.decode(Root.self, from: data)
                                 
