@@ -27,5 +27,4 @@ s.ios.deployment_target = '8.0'
 
 s.source_files = 'VendRegisterExtension/Classes/**/*'
 
-s.dependency 'Decodable', '~> 0.5'
 end

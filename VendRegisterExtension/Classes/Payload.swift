@@ -8,15 +8,14 @@
 //
 
 import Foundation
-import Decodable
 
 /// A representation of the payload
-public struct Payload {
+public struct Payload: Decodable {
     /// The current retailer for the sale
-    public var retailer: Retailer
+    public let retailer: Retailer
     
     /// The current sale
-    public var sale: Sale
+    public let sale: Sale
     
     public init(retailer: Retailer, sale: Sale) {
         self.retailer = retailer
@@ -24,19 +23,3 @@ public struct Payload {
     }
 }
 
-private enum PayloadAttributes {
-    static let retailer = "retailer"
-    static let sale = "sale"
-}
-
-extension Payload : Decodable {
-    public static func decode(_ json: Any) throws -> Payload {
-        return try Payload(retailer: json => KeyPath(PayloadAttributes.retailer), sale: json => KeyPath(PayloadAttributes.sale))
-    }
-}
-
-extension Payload : JSONRepresentable {
-    public var asJsonDictionary: [String : Any] {
-        return [PayloadAttributes.retailer : retailer.asJsonDictionary, PayloadAttributes.sale : sale.asJsonDictionary]
-    }
-}

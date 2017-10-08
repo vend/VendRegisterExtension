@@ -41,22 +41,18 @@ class ActionViewController: UIViewController, UITableViewDelegate, UITableViewDa
                         
                         if let data = secureCoding as? Data {
                             do {
-                                let json = try JSONSerialization.jsonObject(with: data, options: [])
-                                if let jsonDict = json as? [String : Any] {
-                                    if let dataJson = jsonDict["payload"] as? [String: Any] {
-                                        let payload = try Payload.decode(dataJson)
-                                        let sale = payload.sale
-                                        print("Got my sale: \(sale)")
-                                        self.sale = sale
-                                    }
-                                    if let version = jsonDict["version"] as? Int {
-                                        
-                                        // A good citizen should determine which operations are supported by the current installation and respond accordingly
-                                        // In this case we are enabling the button to add an item based on whether the .addLineItems operation is supported
-                                        self.addItemButton.isEnabled = VendRegisterExtensionOperationName.availableOperations(api: version).contains(.addLineItems)
-                                    }
-                                }
+                                let decoder = JSONDecoder()
                                 
+                                let jsonString = String.init(data: data, encoding: String.Encoding.utf8)
+                                
+                                let root = try decoder.decode(Root.self, from: data)
+                                
+                                // A good citizen should determine which operations are supported by the current installation and respond accordingly
+                                // In this case we are enabling the button to add an item based on whether the .addLineItems operation is supported
+                                self.addItemButton.isEnabled = VendRegisterExtensionOperationName.availableOperations(api: root.version).contains(.addLineItems)
+                                
+                                self.sale = root.payload.sale
+                                print("Got my sale: \(root.payload.sale)")
                             } catch {
                                 print("Error: \(error)")
                             }

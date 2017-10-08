@@ -7,35 +7,70 @@
 //
 
 import Foundation
-import Decodable
 
 /// A line item associated with a sale
-public struct LineItem {
+public struct LineItem: Decodable {
     /// The Vend identifier for the product
-    public var productIdentifier: String
+    public let identifier: String
     
     /// The quantity of the product in the sale
-    public var quantity: Decimal
+    public let quantity: Decimal
     
     /// The unit price for the line item
-    public var unitPrice: Decimal
+    public let unitPrice: Decimal
     
     /// The unit tax for the line item
-    public var unitTax: Decimal
+    public let unitTax: Decimal
     
     /// The tax identifier associated with the line item
-    public var taxIdentifier: String
+    public let taxIdentifier: String
     
     /// The name of the line item
-    public var name: String
+    public let name: String
     
-    public init(productIdentifier: String, quantity: Decimal, unitPrice: Decimal, unitTax: Decimal, taxIdentifier: String, name: String) {
-        self.productIdentifier = productIdentifier
+    public init(identifier: String, quantity: Decimal, unitPrice: Decimal, unitTax: Decimal, taxIdentifier: String, name: String) {
+        self.identifier = identifier
         self.quantity = quantity
         self.unitPrice = unitPrice
         self.unitTax = unitTax
         self.taxIdentifier = taxIdentifier
         self.name = name
+    }
+    
+    enum CodingKeys: CodingKey {
+        case identifier
+        case quantity
+        case unitPrice
+        case unitTax
+        case taxIdentifier
+        case name
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        identifier = try container.decode(String.self, forKey: CodingKeys.identifier)
+    
+        let quantityString = try container.decode(String.self, forKey: CodingKeys.quantity)
+        if let value = Decimal(string: quantityString) {
+            quantity = value
+        } else {
+            throw VendRegisterExtensionError.failedDecimalConversion(value: quantityString)
+        }
+        let unitPriceString = try container.decode(String.self, forKey: CodingKeys.unitPrice)
+        if let value = Decimal(string: unitPriceString) {
+            unitPrice = value
+        } else {
+            throw VendRegisterExtensionError.failedDecimalConversion(value: unitPriceString)
+        }
+        let unitTaxString = try container.decode(String.self, forKey: CodingKeys.unitTax)
+        if let value = Decimal(string: unitTaxString) {
+            unitTax = value
+        } else {
+            throw VendRegisterExtensionError.failedDecimalConversion(value: unitTaxString)
+        }
+        
+        taxIdentifier = try container.decode(String.self, forKey: CodingKeys.taxIdentifier)
+        name = try container.decode(String.self, forKey: CodingKeys.name)
     }
 }
 
@@ -48,19 +83,9 @@ private enum LineItemAttributes {
     static let name = "name"
 }
 
-extension LineItem: Decodable {
-    public static func decode(_ json: Any) throws -> LineItem {
-        return try LineItem(productIdentifier: json => KeyPath(LineItemAttributes.productIdentifier),
-                            quantity: json => KeyPath(LineItemAttributes.quantity),
-                            unitPrice: json => KeyPath(LineItemAttributes.unitPrice),
-                            unitTax: json => KeyPath(LineItemAttributes.unitTax),
-                            taxIdentifier: json => KeyPath(LineItemAttributes.taxIdentifier),
-                            name: json => KeyPath(LineItemAttributes.name))
+extension LineItem: DictionaryRepresentable {
+    public var asDictionary : [String: Any] {
+        return [LineItemAttributes.productIdentifier: identifier, LineItemAttributes.quantity: "\(quantity)", LineItemAttributes.unitPrice: "\(unitPrice)", LineItemAttributes.unitTax: "\(unitTax)", LineItemAttributes.taxIdentifier: taxIdentifier, LineItemAttributes.name : name]
     }
 }
 
-extension LineItem: JSONRepresentable {
-    public var asJsonDictionary : [String: Any] {
-        return [LineItemAttributes.productIdentifier: productIdentifier, LineItemAttributes.quantity: "\(quantity)", LineItemAttributes.unitPrice: "\(unitPrice)", LineItemAttributes.unitTax: "\(unitTax)", LineItemAttributes.taxIdentifier: taxIdentifier, LineItemAttributes.name : name]
-    }
-}

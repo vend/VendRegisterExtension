@@ -50,13 +50,11 @@ public enum VendRegisterExtensionOperation {
         
         switch self {
         case .addLineItems(let lineItems):
-            dict[ExtensionKeys.parameters] = lineItems.map({ $0.asJsonDictionary })
+            dict[ExtensionKeys.parameters] = lineItems.map({ $0.asDictionary })
         }
         
         item.userInfo = dict
         
         return item
     }
-
-    
 }

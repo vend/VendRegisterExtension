@@ -16,10 +16,5 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "VendRegisterExtension/Classes/**/*",
-  "dependencies": {
-    "Decodable": [
-      "~> 0.5"
-    ]
-  }
+  "source_files": "VendRegisterExtension/Classes/**/*"
 }

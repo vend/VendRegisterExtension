@@ -9,8 +9,8 @@
 import Foundation
 
 /// A protocol for defining how to convert an object into a dictionary suitable for JSON serialization
-public protocol JSONRepresentable {
+public protocol DictionaryRepresentable {
     
     /// Represent the current instance as a Dictionary
-    var asJsonDictionary : [String: Any] { get }
+    var asDictionary : [String: Any] { get }
 }

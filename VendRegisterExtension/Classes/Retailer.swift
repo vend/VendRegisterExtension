@@ -8,15 +8,14 @@
 //
 
 import Foundation
-import Decodable
 
 /// A representation of the current retailer
-public struct Retailer {
+public struct Retailer: Decodable {
     /// The Vend identifier for the retailer
-    public var identifier: String
+    public let identifier: String
     
     /// The current retailer domain
-    public var domainPrefix: String
+    public let domainPrefix: String
     
     public init(identifier: String, domainPrefix: String) {
         self.identifier = identifier
@@ -24,19 +23,3 @@ public struct Retailer {
     }
 }
 
-private enum RetailerAttributes {
-    static let identifier = "identifier"
-    static let domainPrefix = "domainPrefix"
-}
-
-extension Retailer : Decodable {
-    public static func decode(_ json: Any) throws -> Retailer {
-        return try Retailer(identifier: json => KeyPath(RetailerAttributes.identifier), domainPrefix: json => KeyPath(RetailerAttributes.domainPrefix))
-    }
-}
-
-extension Retailer : JSONRepresentable {
-    public var asJsonDictionary: [String : Any] {
-        return [RetailerAttributes.identifier : identifier, RetailerAttributes.domainPrefix : domainPrefix]
-    }
-}
