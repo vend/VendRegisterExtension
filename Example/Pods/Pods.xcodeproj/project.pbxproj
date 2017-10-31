@@ -7,28 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		035A569DC3FDD9C19B31A26BF23CE160 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CD0DCDDA0035D976F442C4D40FC67E /* Payload.swift */; };
-		0AB61F447EB1035B9B4A32D0ECE14546 /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D389CF9B620AB57B3E4D363B08D94A34 /* Operations.swift */; };
-		142464980BD2F5AAE4371B7A7CC7A829 /* Totals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C7FEB3092B3A1AF45D6DC930800F0 /* Totals.swift */; };
+		0454DD6FDAEABD927FA205292D40B4BD /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978EDF295064AC5470BC585C4587FF3D /* Root.swift */; };
 		2A105616C04250183CF4178E0E0AC0ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		370618CE82FD4400030488D9CA082184 /* Retailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D86B5CEBC1D1EA83339A768053B199 /* Retailer.swift */; };
-		3D14E78BF6695660AC999E4E2E623D88 /* JSONRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA88DFE0E22934347BBF4C3218D8414 /* JSONRepresentable.swift */; };
+		46D2162AE20FFC0DCEEC5FBE7FFF7A1F /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD037405B3A15E2D3D7B7ECC458D7135 /* Sale.swift */; };
 		51043C458ADBF1ED6A8F8F6CF0012C84 /* Pods-VendRegisterExtension_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 074E62EBCEC15DB7708973A99EEC8874 /* Pods-VendRegisterExtension_Example-dummy.m */; };
+		5227DE8FC0A9D9D490DC2DE90396D913 /* JSONRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D2047D09A80D4F99D6AB77E6032D04 /* JSONRepresentable.swift */; };
+		657053F56E7AAE4EA63A3D6A3C990B46 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF557B64471D851FF50BF80C8F1020DE /* Customer.swift */; };
 		6BAA5222C5B4F340659406039C6C226F /* Pods-VendRegisterExtension_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E907BFC33EB1DAD366B457D329E8F5FA /* Pods-VendRegisterExtension_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C9F799A60935B360A36A733D0AC182C /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB2BD6790D2BDFC4E847F872135AFF /* Sale.swift */; };
-		85118604C0DD72C69AC2A0FA9E82714C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD4C805F938D53105AD585719C131ED /* Constants.swift */; };
-		923B3C9EAE5E735401DA5997CC79CE08 /* VendRegisterExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC8F344E2099C66933868005B3DC94B /* VendRegisterExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9823EB8DB8517DA321BFD0135FD914E1 /* VendRegisterExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D643A22F7899A4B94FD0E40BDB6915D2 /* VendRegisterExtension-dummy.m */; };
-		BD5D6AD4A3566AF95F68CD501213AB9A /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB51E8A4C61C4F84DC25CE4CDA92E022 /* Root.swift */; };
+		73D4F3E6B2468ED02AC2717B9498D818 /* Totals.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD38F60E35D59683658E838968C5F1E /* Totals.swift */; };
+		876BFDB499EBA0E38BB45180CD1B4C8E /* VendRegisterExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FCBCA69F72F06B3C627D577CD39EDE /* VendRegisterExtension-dummy.m */; };
+		923B3C9EAE5E735401DA5997CC79CE08 /* VendRegisterExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6686247FC4AF046070BFDC69BBD3A6BF /* VendRegisterExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9847E327D64F874AA36DCC725A2C052B /* VendRegisterExtensionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F21D42B11EB79577AAA34BF98DCCF /* VendRegisterExtensionError.swift */; };
+		AD9D9BA209A529BA0A46961CF482B33D /* Retailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5375A1A1FDD70EA580CFD85813E6FE08 /* Retailer.swift */; };
 		C4420E4FAD071A9EC3E541635BEF966F /* Pods-Discount Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 333DB8A6A68FF328756A4568C185DBA6 /* Pods-Discount Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8B30002A502936FB7A796FFBFA69A5B /* Pods-VendRegisterExtension_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16DC30FE633D65B9D39972E6F981EA24 /* Pods-VendRegisterExtension_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8EF1CC5EFBD4EBCE66A682E2B46051A /* VendRegisterExtensionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8810FF0B8C2521D499F5B929119C77C1 /* VendRegisterExtensionError.swift */; };
+		C8F0C61AAEA02371548FDA4635F372AA /* LineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A36C11C106498B5BE4A22581BBD7AE /* LineItem.swift */; };
+		D28BA83C0E699A332594DEA74C979AC4 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143D00EA390E9C820060DDBDABFA351B /* Payload.swift */; };
+		D307B4000AD4F3D739470FEC7CB028D6 /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC31F4A32D2425FDA3B7D23FE7C11FD /* Operations.swift */; };
 		D9BB4DDC3072516D1D94BCB49AAC7889 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		DA4C6F4D96E6F31DA8E64FDCDC770875 /* LineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CECB12922E6BA7FCBEC6F905F70EB1 /* LineItem.swift */; };
+		DC7CA2FC0A165A8BB85621614AF937D3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0070BDF5C0EF7E3CB5AF799E6E2BDFAB /* Constants.swift */; };
 		E337C22ED0396EC4C101AAA01EA7103E /* Pods-Discount Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DC50205D020F06DBD93F6305311A99 /* Pods-Discount Example-dummy.m */; };
 		E4FE05BA8D015FBDCC3A61034A612575 /* Pods-VendRegisterExtension_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 343D5D06E3E4DB4D41A925893ABA36F4 /* Pods-VendRegisterExtension_Tests-dummy.m */; };
 		ECA8A123B03BACB90D5E2A520B01B089 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		F107A7A5AD0602203D30BE32A30BA8B4 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE7AD9B7BAA2AD7440CE1EA6B87ED9B /* Customer.swift */; };
 		F1A94A03B4AAFE84EF38E6F2786A7159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,58 +43,58 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		015D83E09149EB21EEC1719DAE002E3B /* Pods-VendRegisterExtension_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VendRegisterExtension_Example.modulemap"; sourceTree = "<group>"; };
+		0070BDF5C0EF7E3CB5AF799E6E2BDFAB /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = VendRegisterExtension/Classes/Constants.swift; sourceTree = "<group>"; };
+		015D83E09149EB21EEC1719DAE002E3B /* Pods-VendRegisterExtension_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VendRegisterExtension_Example.modulemap"; sourceTree = "<group>"; };
 		06BFDE2E48E7372AFCF127FB16631155 /* Pods-VendRegisterExtension_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VendRegisterExtension_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		074E62EBCEC15DB7708973A99EEC8874 /* Pods-VendRegisterExtension_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VendRegisterExtension_Example-dummy.m"; sourceTree = "<group>"; };
+		143D00EA390E9C820060DDBDABFA351B /* Payload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Payload.swift; path = VendRegisterExtension/Classes/Payload.swift; sourceTree = "<group>"; };
+		14A36C11C106498B5BE4A22581BBD7AE /* LineItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineItem.swift; path = VendRegisterExtension/Classes/LineItem.swift; sourceTree = "<group>"; };
 		15AA80169F2BBD71BBB55FE46F3DA037 /* Pods-VendRegisterExtension_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VendRegisterExtension_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		15F28C797F39301A6AC7A623D5CC9BFF /* Pods-VendRegisterExtension_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VendRegisterExtension_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		16DC30FE633D65B9D39972E6F981EA24 /* Pods-VendRegisterExtension_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VendRegisterExtension_Example-umbrella.h"; sourceTree = "<group>"; };
 		2C4708B42170C99456EB96C5BEACBAE7 /* Pods-VendRegisterExtension_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VendRegisterExtension_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		333DB8A6A68FF328756A4568C185DBA6 /* Pods-Discount Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Discount Example-umbrella.h"; sourceTree = "<group>"; };
 		343D5D06E3E4DB4D41A925893ABA36F4 /* Pods-VendRegisterExtension_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VendRegisterExtension_Tests-dummy.m"; sourceTree = "<group>"; };
-		3866760BB86F1658B8485309B2D43658 /* Pods-VendRegisterExtension_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VendRegisterExtension_Tests.modulemap"; sourceTree = "<group>"; };
-		4DE7AD9B7BAA2AD7440CE1EA6B87ED9B /* Customer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Customer.swift; path = VendRegisterExtension/Classes/Customer.swift; sourceTree = "<group>"; };
+		380F8A0AB67AB9A7D3DC296469222389 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3866760BB86F1658B8485309B2D43658 /* Pods-VendRegisterExtension_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VendRegisterExtension_Tests.modulemap"; sourceTree = "<group>"; };
+		5375A1A1FDD70EA580CFD85813E6FE08 /* Retailer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Retailer.swift; path = VendRegisterExtension/Classes/Retailer.swift; sourceTree = "<group>"; };
 		5A645F85FB52C0E0A2D34F049E9B3177 /* Pods-VendRegisterExtension_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VendRegisterExtension_Tests-resources.sh"; sourceTree = "<group>"; };
-		5C3C7FEB3092B3A1AF45D6DC930800F0 /* Totals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Totals.swift; path = VendRegisterExtension/Classes/Totals.swift; sourceTree = "<group>"; };
-		5D57F1D4160BBD0AF7CB9DCD80D45231 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63FCBCA69F72F06B3C627D577CD39EDE /* VendRegisterExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VendRegisterExtension-dummy.m"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6686247FC4AF046070BFDC69BBD3A6BF /* VendRegisterExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VendRegisterExtension-umbrella.h"; sourceTree = "<group>"; };
 		697BB92F5DE7EC0BE9099ABB1DF422BC /* Pods-VendRegisterExtension_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VendRegisterExtension_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7A6E990C5F83F1D6E2BECC5B632B64EB /* Pods-Discount Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Discount Example-resources.sh"; sourceTree = "<group>"; };
 		83967F59B3E26D0CCF1F32EFBDD69A9A /* Pods-Discount Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Discount Example.release.xcconfig"; sourceTree = "<group>"; };
-		8810FF0B8C2521D499F5B929119C77C1 /* VendRegisterExtensionError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VendRegisterExtensionError.swift; path = VendRegisterExtension/Classes/VendRegisterExtensionError.swift; sourceTree = "<group>"; };
+		86D2047D09A80D4F99D6AB77E6032D04 /* JSONRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONRepresentable.swift; path = VendRegisterExtension/Classes/JSONRepresentable.swift; sourceTree = "<group>"; };
 		8840AE2BF097B5B3349F763100B8880D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96CE5F3336322012E7BEDD3C7E29254E /* VendRegisterExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VendRegisterExtension-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		978EDF295064AC5470BC585C4587FF3D /* Root.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Root.swift; path = VendRegisterExtension/Classes/Root.swift; sourceTree = "<group>"; };
 		9B35558E17175A902C264BCA7CCCE8FC /* Pods-VendRegisterExtension_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VendRegisterExtension_Example-frameworks.sh"; sourceTree = "<group>"; };
-		9DA88DFE0E22934347BBF4C3218D8414 /* JSONRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONRepresentable.swift; path = VendRegisterExtension/Classes/JSONRepresentable.swift; sourceTree = "<group>"; };
 		9F19C1730914FFBF6AC5ADA9262B6611 /* Pods-Discount Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Discount Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9FDA7D9929B264BE24181F6D6363D3D1 /* Pods-Discount Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Discount Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A057004455273E3B7780384D06D46D29 /* VendRegisterExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VendRegisterExtension.xcconfig; sourceTree = "<group>"; };
-		A4D86B5CEBC1D1EA83339A768053B199 /* Retailer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Retailer.swift; path = VendRegisterExtension/Classes/Retailer.swift; sourceTree = "<group>"; };
+		A74A03BE12C987BDB288A85129132BD7 /* VendRegisterExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VendRegisterExtension-prefix.pch"; sourceTree = "<group>"; };
 		A8D7C3462F749A56B74B7C7F984D598D /* Pods-VendRegisterExtension_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VendRegisterExtension_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A9BB2BD6790D2BDFC4E847F872135AFF /* Sale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sale.swift; path = VendRegisterExtension/Classes/Sale.swift; sourceTree = "<group>"; };
-		B336C5FFDAD6B01B5AE163BAEB424169 /* Pods-Discount Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Discount Example.modulemap"; sourceTree = "<group>"; };
-		B479EC08B5BABC74F5040504B838E581 /* VendRegisterExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VendRegisterExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD38F60E35D59683658E838968C5F1E /* Totals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Totals.swift; path = VendRegisterExtension/Classes/Totals.swift; sourceTree = "<group>"; };
+		AF557B64471D851FF50BF80C8F1020DE /* Customer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Customer.swift; path = VendRegisterExtension/Classes/Customer.swift; sourceTree = "<group>"; };
+		B336C5FFDAD6B01B5AE163BAEB424169 /* Pods-Discount Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Discount Example.modulemap"; sourceTree = "<group>"; };
+		B479EC08B5BABC74F5040504B838E581 /* VendRegisterExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VendRegisterExtension.framework; path = VendRegisterExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C46839DA5A49B180FF7BAA63305792CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6CD0DCDDA0035D976F442C4D40FC67E /* Payload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Payload.swift; path = VendRegisterExtension/Classes/Payload.swift; sourceTree = "<group>"; };
 		CB14B7FB646E8D734A2769B39E9B360E /* Pods-VendRegisterExtension_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VendRegisterExtension_Example-resources.sh"; sourceTree = "<group>"; };
 		CC4DD6D6979F4009904FBB33737430F2 /* Pods-Discount Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Discount Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		D389CF9B620AB57B3E4D363B08D94A34 /* Operations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operations.swift; path = VendRegisterExtension/Classes/Operations.swift; sourceTree = "<group>"; };
-		D5CECB12922E6BA7FCBEC6F905F70EB1 /* LineItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineItem.swift; path = VendRegisterExtension/Classes/LineItem.swift; sourceTree = "<group>"; };
-		D643A22F7899A4B94FD0E40BDB6915D2 /* VendRegisterExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VendRegisterExtension-dummy.m"; sourceTree = "<group>"; };
+		CD037405B3A15E2D3D7B7ECC458D7135 /* Sale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sale.swift; path = VendRegisterExtension/Classes/Sale.swift; sourceTree = "<group>"; };
 		D9DC50205D020F06DBD93F6305311A99 /* Pods-Discount Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Discount Example-dummy.m"; sourceTree = "<group>"; };
-		DAAA80B6BE57BB6C5088AF1FB581D030 /* Pods_VendRegisterExtension_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VendRegisterExtension_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAAA80B6BE57BB6C5088AF1FB581D030 /* Pods_VendRegisterExtension_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VendRegisterExtension_Example.framework; path = "Pods-VendRegisterExtension_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC31F4A32D2425FDA3B7D23FE7C11FD /* Operations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operations.swift; path = VendRegisterExtension/Classes/Operations.swift; sourceTree = "<group>"; };
+		DE541E14C2F10297A545F59958D03135 /* VendRegisterExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = VendRegisterExtension.modulemap; sourceTree = "<group>"; };
 		E0136D01AD5AA188A879DB99C0A40C54 /* Pods-VendRegisterExtension_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VendRegisterExtension_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		E36DAFF71137323DF360A8DC5ABE8E40 /* VendRegisterExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VendRegisterExtension.xcconfig; sourceTree = "<group>"; };
 		E907BFC33EB1DAD366B457D329E8F5FA /* Pods-VendRegisterExtension_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VendRegisterExtension_Tests-umbrella.h"; sourceTree = "<group>"; };
-		E9D9DA86A07A7F908846C26AF16FA163 /* VendRegisterExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = VendRegisterExtension.modulemap; sourceTree = "<group>"; };
-		EAC8F344E2099C66933868005B3DC94B /* VendRegisterExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VendRegisterExtension-umbrella.h"; sourceTree = "<group>"; };
-		EB51E8A4C61C4F84DC25CE4CDA92E022 /* Root.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Root.swift; path = VendRegisterExtension/Classes/Root.swift; sourceTree = "<group>"; };
 		EEB7D2A986C5C0A990D4410267135C2D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFE1301466184CE9D27BB1E7C6EE5C21 /* Pods-VendRegisterExtension_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VendRegisterExtension_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FA095B9A5B5B64207B4A3F22A74DCCAD /* Pods_VendRegisterExtension_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VendRegisterExtension_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F54F21D42B11EB79577AAA34BF98DCCF /* VendRegisterExtensionError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VendRegisterExtensionError.swift; path = VendRegisterExtension/Classes/VendRegisterExtensionError.swift; sourceTree = "<group>"; };
+		FA095B9A5B5B64207B4A3F22A74DCCAD /* Pods_VendRegisterExtension_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VendRegisterExtension_Tests.framework; path = "Pods-VendRegisterExtension_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB067106066057FF5A45F85BDD3AEB47 /* Pods-VendRegisterExtension_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VendRegisterExtension_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FCD4C805F938D53105AD585719C131ED /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = VendRegisterExtension/Classes/Constants.swift; sourceTree = "<group>"; };
-		FD3206BA4E9304A622F7F0ABADD27288 /* Pods_Discount_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Discount_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3206BA4E9304A622F7F0ABADD27288 /* Pods_Discount_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Discount_Example.framework; path = "Pods-Discount Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,12 +143,18 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		2BF04D4B85740E3B69493CB802F2B9EB /* Development Pods */ = {
+		17FC1DFB4BAC3FE3E72A3277064D9DBF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FF82F6C8DB8621102CF79B7A1A5A63F7 /* VendRegisterExtension */,
+				380F8A0AB67AB9A7D3DC296469222389 /* Info.plist */,
+				DE541E14C2F10297A545F59958D03135 /* VendRegisterExtension.modulemap */,
+				E36DAFF71137323DF360A8DC5ABE8E40 /* VendRegisterExtension.xcconfig */,
+				63FCBCA69F72F06B3C627D577CD39EDE /* VendRegisterExtension-dummy.m */,
+				A74A03BE12C987BDB288A85129132BD7 /* VendRegisterExtension-prefix.pch */,
+				6686247FC4AF046070BFDC69BBD3A6BF /* VendRegisterExtension-umbrella.h */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/VendRegisterExtension";
 			sourceTree = "<group>";
 		};
 		39DB6C10EC161BB324FA7BF993F1E000 /* Pods-VendRegisterExtension_Example */ = {
@@ -169,11 +175,19 @@
 			path = "Target Support Files/Pods-VendRegisterExtension_Example";
 			sourceTree = "<group>";
 		};
+		48DD64DBACF41D29DE063E138A6533C7 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7F6D86EDF3202B8884AF16950B607E3 /* VendRegisterExtension */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				2BF04D4B85740E3B69493CB802F2B9EB /* Development Pods */,
+				48DD64DBACF41D29DE063E138A6533C7 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				CA7BCF37259A0DA911AD0B96353CCA8A /* Products */,
 				04B7708FDA2A59E4A042798FB843FA11 /* Targets Support Files */,
@@ -242,35 +256,21 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		E34A48FAEAF309FD9723DEC02E54D96F /* Support Files */ = {
+		F7F6D86EDF3202B8884AF16950B607E3 /* VendRegisterExtension */ = {
 			isa = PBXGroup;
 			children = (
-				5D57F1D4160BBD0AF7CB9DCD80D45231 /* Info.plist */,
-				E9D9DA86A07A7F908846C26AF16FA163 /* VendRegisterExtension.modulemap */,
-				A057004455273E3B7780384D06D46D29 /* VendRegisterExtension.xcconfig */,
-				D643A22F7899A4B94FD0E40BDB6915D2 /* VendRegisterExtension-dummy.m */,
-				96CE5F3336322012E7BEDD3C7E29254E /* VendRegisterExtension-prefix.pch */,
-				EAC8F344E2099C66933868005B3DC94B /* VendRegisterExtension-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/VendRegisterExtension";
-			sourceTree = "<group>";
-		};
-		FF82F6C8DB8621102CF79B7A1A5A63F7 /* VendRegisterExtension */ = {
-			isa = PBXGroup;
-			children = (
-				FCD4C805F938D53105AD585719C131ED /* Constants.swift */,
-				4DE7AD9B7BAA2AD7440CE1EA6B87ED9B /* Customer.swift */,
-				9DA88DFE0E22934347BBF4C3218D8414 /* JSONRepresentable.swift */,
-				D5CECB12922E6BA7FCBEC6F905F70EB1 /* LineItem.swift */,
-				D389CF9B620AB57B3E4D363B08D94A34 /* Operations.swift */,
-				C6CD0DCDDA0035D976F442C4D40FC67E /* Payload.swift */,
-				A4D86B5CEBC1D1EA83339A768053B199 /* Retailer.swift */,
-				EB51E8A4C61C4F84DC25CE4CDA92E022 /* Root.swift */,
-				A9BB2BD6790D2BDFC4E847F872135AFF /* Sale.swift */,
-				5C3C7FEB3092B3A1AF45D6DC930800F0 /* Totals.swift */,
-				8810FF0B8C2521D499F5B929119C77C1 /* VendRegisterExtensionError.swift */,
-				E34A48FAEAF309FD9723DEC02E54D96F /* Support Files */,
+				0070BDF5C0EF7E3CB5AF799E6E2BDFAB /* Constants.swift */,
+				AF557B64471D851FF50BF80C8F1020DE /* Customer.swift */,
+				86D2047D09A80D4F99D6AB77E6032D04 /* JSONRepresentable.swift */,
+				14A36C11C106498B5BE4A22581BBD7AE /* LineItem.swift */,
+				DCC31F4A32D2425FDA3B7D23FE7C11FD /* Operations.swift */,
+				143D00EA390E9C820060DDBDABFA351B /* Payload.swift */,
+				5375A1A1FDD70EA580CFD85813E6FE08 /* Retailer.swift */,
+				978EDF295064AC5470BC585C4587FF3D /* Root.swift */,
+				CD037405B3A15E2D3D7B7ECC458D7135 /* Sale.swift */,
+				ABD38F60E35D59683658E838968C5F1E /* Totals.swift */,
+				F54F21D42B11EB79577AAA34BF98DCCF /* VendRegisterExtensionError.swift */,
+				17FC1DFB4BAC3FE3E72A3277064D9DBF /* Support Files */,
 			);
 			name = VendRegisterExtension;
 			path = ../..;
@@ -353,7 +353,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9ED785AA17262C770B65F933B760AA5 /* Build configuration list for PBXNativeTarget "VendRegisterExtension" */;
 			buildPhases = (
-				0DE48007E4A42D690585EEF5D3CD8D6A /* Sources */,
+				A327753967A6C410196734727D340226 /* Sources */,
 				BD9B0B055608F1822B388368098F2F0F /* Frameworks */,
 				4D1DCCDFF113A32250FB19D2FB454AD4 /* Headers */,
 			);
@@ -390,7 +390,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -413,25 +413,6 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0DE48007E4A42D690585EEF5D3CD8D6A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				85118604C0DD72C69AC2A0FA9E82714C /* Constants.swift in Sources */,
-				F107A7A5AD0602203D30BE32A30BA8B4 /* Customer.swift in Sources */,
-				3D14E78BF6695660AC999E4E2E623D88 /* JSONRepresentable.swift in Sources */,
-				DA4C6F4D96E6F31DA8E64FDCDC770875 /* LineItem.swift in Sources */,
-				0AB61F447EB1035B9B4A32D0ECE14546 /* Operations.swift in Sources */,
-				035A569DC3FDD9C19B31A26BF23CE160 /* Payload.swift in Sources */,
-				370618CE82FD4400030488D9CA082184 /* Retailer.swift in Sources */,
-				BD5D6AD4A3566AF95F68CD501213AB9A /* Root.swift in Sources */,
-				7C9F799A60935B360A36A733D0AC182C /* Sale.swift in Sources */,
-				142464980BD2F5AAE4371B7A7CC7A829 /* Totals.swift in Sources */,
-				9823EB8DB8517DA321BFD0135FD914E1 /* VendRegisterExtension-dummy.m in Sources */,
-				C8EF1CC5EFBD4EBCE66A682E2B46051A /* VendRegisterExtensionError.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0FB61EE3FB4BB475F0756B67885F2302 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -453,6 +434,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				51043C458ADBF1ED6A8F8F6CF0012C84 /* Pods-VendRegisterExtension_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A327753967A6C410196734727D340226 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7CA2FC0A165A8BB85621614AF937D3 /* Constants.swift in Sources */,
+				657053F56E7AAE4EA63A3D6A3C990B46 /* Customer.swift in Sources */,
+				5227DE8FC0A9D9D490DC2DE90396D913 /* JSONRepresentable.swift in Sources */,
+				C8F0C61AAEA02371548FDA4635F372AA /* LineItem.swift in Sources */,
+				D307B4000AD4F3D739470FEC7CB028D6 /* Operations.swift in Sources */,
+				D28BA83C0E699A332594DEA74C979AC4 /* Payload.swift in Sources */,
+				AD9D9BA209A529BA0A46961CF482B33D /* Retailer.swift in Sources */,
+				0454DD6FDAEABD927FA205292D40B4BD /* Root.swift in Sources */,
+				46D2162AE20FFC0DCEEC5FBE7FFF7A1F /* Sale.swift in Sources */,
+				73D4F3E6B2468ED02AC2717B9498D818 /* Totals.swift in Sources */,
+				876BFDB499EBA0E38BB45180CD1B4C8E /* VendRegisterExtension-dummy.m in Sources */,
+				9847E327D64F874AA36DCC725A2C052B /* VendRegisterExtensionError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,7 +502,7 @@
 		};
 		592B1E7DA6C585CABCE88662CDB24B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A057004455273E3B7780384D06D46D29 /* VendRegisterExtension.xcconfig */;
+			baseConfigurationReference = E36DAFF71137323DF360A8DC5ABE8E40 /* VendRegisterExtension.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -582,7 +582,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -622,7 +621,7 @@
 		};
 		9922366B261C9764E291A9AC7C693BC8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A057004455273E3B7780384D06D46D29 /* VendRegisterExtension.xcconfig */;
+			baseConfigurationReference = E36DAFF71137323DF360A8DC5ABE8E40 /* VendRegisterExtension.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

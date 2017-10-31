@@ -2,7 +2,7 @@ use_frameworks!
 platform :ios, '9.0'
 
 target 'VendRegisterExtension_Example' do
-  pod 'VendRegisterExtension', :path => '../'
+    pod 'VendRegisterExtension', :path => '../'
 
   target 'VendRegisterExtension_Tests' do
     inherit! :search_paths
