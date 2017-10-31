@@ -98,5 +98,47 @@ extension LineItem: DictionaryRepresentable {
     public var asDictionary : [String: Any] {
         return [LineItemAttributes.productIdentifier: identifier, LineItemAttributes.quantity: "\(quantity)", LineItemAttributes.unitPrice: "\(unitPrice)", LineItemAttributes.unitTax: "\(unitTax)", LineItemAttributes.taxIdentifier: taxIdentifier, LineItemAttributes.name : name]
     }
+    
+    public init(dictionary: [String: Any]) throws {
+        guard let identifierValue = dictionary[LineItemAttributes.productIdentifier] as? String else {
+            throw VendRegisterExtensionError.failedDictionaryUnwrapping(identifier: LineItemAttributes.productIdentifier, value: dictionary[LineItemAttributes.productIdentifier])
+        }
+        identifier = identifierValue
+        
+        guard let quantityString = dictionary[LineItemAttributes.quantity] as? String else {
+            throw VendRegisterExtensionError.failedDictionaryUnwrapping(identifier: LineItemAttributes.quantity, value: dictionary[LineItemAttributes.quantity])
+        }
+        if let value = Decimal(string: quantityString) {
+            quantity = value
+        } else {
+            throw VendRegisterExtensionError.failedDecimalConversion(value: quantityString)
+        }
+        guard let unitPriceString = dictionary[LineItemAttributes.unitPrice] as? String else {
+            throw VendRegisterExtensionError.failedDictionaryUnwrapping(identifier: LineItemAttributes.unitPrice, value: dictionary[LineItemAttributes.unitPrice])
+        }
+        if let value = Decimal(string: unitPriceString) {
+            unitPrice = value
+        } else {
+            throw VendRegisterExtensionError.failedDecimalConversion(value: unitPriceString)
+        }
+        guard let unitTaxString = dictionary[LineItemAttributes.unitTax] as? String else {
+            throw VendRegisterExtensionError.failedDictionaryUnwrapping(identifier: LineItemAttributes.unitTax, value: dictionary[LineItemAttributes.unitTax])
+        }
+        if let value = Decimal(string: unitTaxString) {
+            unitTax = value
+        } else {
+            throw VendRegisterExtensionError.failedDecimalConversion(value: unitTaxString)
+        }
+        
+        guard let taxIdentifierValue = dictionary[LineItemAttributes.taxIdentifier] as? String else {
+            throw VendRegisterExtensionError.failedDictionaryUnwrapping(identifier: LineItemAttributes.taxIdentifier, value: dictionary[LineItemAttributes.taxIdentifier])
+        }
+        taxIdentifier = taxIdentifierValue
+        
+        guard let nameValue = dictionary[LineItemAttributes.name] as? String else {
+            throw VendRegisterExtensionError.failedDictionaryUnwrapping(identifier: LineItemAttributes.name, value: dictionary[LineItemAttributes.name])
+        }
+        name = nameValue
+    }
 }
 
