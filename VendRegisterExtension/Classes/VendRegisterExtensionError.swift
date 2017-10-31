@@ -34,7 +34,6 @@ public enum VendRegisterExtensionError: Error, CustomNSError {
         switch self {
         case .failedDictionaryUnwrapping(let identifier, let value): return [ "identifier": identifier, "value": value ?? "nil"]
         case .failedDecimalConversion(let value): return ["value": value]
-        default: return [:]
         }
     }
     
