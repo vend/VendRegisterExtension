@@ -23,7 +23,6 @@
 		C4420E4FAD071A9EC3E541635BEF966F /* Pods-Discount Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 333DB8A6A68FF328756A4568C185DBA6 /* Pods-Discount Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8B30002A502936FB7A796FFBFA69A5B /* Pods-VendRegisterExtension_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16DC30FE633D65B9D39972E6F981EA24 /* Pods-VendRegisterExtension_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8EF1CC5EFBD4EBCE66A682E2B46051A /* VendRegisterExtensionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8810FF0B8C2521D499F5B929119C77C1 /* VendRegisterExtensionError.swift */; };
-		D9B6B39FDEA7DDEFF10C72C4A9184F21 /* Decimal+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8FB558C3634C9F78A6F2B1C38C9D6C /* Decimal+Decodable.swift */; };
 		D9BB4DDC3072516D1D94BCB49AAC7889 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		DA4C6F4D96E6F31DA8E64FDCDC770875 /* LineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CECB12922E6BA7FCBEC6F905F70EB1 /* LineItem.swift */; };
 		E337C22ED0396EC4C101AAA01EA7103E /* Pods-Discount Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DC50205D020F06DBD93F6305311A99 /* Pods-Discount Example-dummy.m */; };
@@ -56,7 +55,6 @@
 		3866760BB86F1658B8485309B2D43658 /* Pods-VendRegisterExtension_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VendRegisterExtension_Tests.modulemap"; sourceTree = "<group>"; };
 		4DE7AD9B7BAA2AD7440CE1EA6B87ED9B /* Customer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Customer.swift; path = VendRegisterExtension/Classes/Customer.swift; sourceTree = "<group>"; };
 		5A645F85FB52C0E0A2D34F049E9B3177 /* Pods-VendRegisterExtension_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VendRegisterExtension_Tests-resources.sh"; sourceTree = "<group>"; };
-		5A8FB558C3634C9F78A6F2B1C38C9D6C /* Decimal+Decodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Decimal+Decodable.swift"; path = "VendRegisterExtension/Classes/Decimal+Decodable.swift"; sourceTree = "<group>"; };
 		5C3C7FEB3092B3A1AF45D6DC930800F0 /* Totals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Totals.swift; path = VendRegisterExtension/Classes/Totals.swift; sourceTree = "<group>"; };
 		5D57F1D4160BBD0AF7CB9DCD80D45231 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -263,7 +261,6 @@
 			children = (
 				FCD4C805F938D53105AD585719C131ED /* Constants.swift */,
 				4DE7AD9B7BAA2AD7440CE1EA6B87ED9B /* Customer.swift */,
-				5A8FB558C3634C9F78A6F2B1C38C9D6C /* Decimal+Decodable.swift */,
 				9DA88DFE0E22934347BBF4C3218D8414 /* JSONRepresentable.swift */,
 				D5CECB12922E6BA7FCBEC6F905F70EB1 /* LineItem.swift */,
 				D389CF9B620AB57B3E4D363B08D94A34 /* Operations.swift */,
@@ -422,7 +419,6 @@
 			files = (
 				85118604C0DD72C69AC2A0FA9E82714C /* Constants.swift in Sources */,
 				F107A7A5AD0602203D30BE32A30BA8B4 /* Customer.swift in Sources */,
-				D9B6B39FDEA7DDEFF10C72C4A9184F21 /* Decimal+Decodable.swift in Sources */,
 				3D14E78BF6695660AC999E4E2E623D88 /* JSONRepresentable.swift in Sources */,
 				DA4C6F4D96E6F31DA8E64FDCDC770875 /* LineItem.swift in Sources */,
 				0AB61F447EB1035B9B4A32D0ECE14546 /* Operations.swift in Sources */,
