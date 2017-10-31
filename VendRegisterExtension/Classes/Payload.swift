@@ -10,7 +10,7 @@
 import Foundation
 
 /// A representation of the payload
-public struct Payload: Decodable {
+public struct Payload: Codable {
     /// The current retailer for the sale
     public let retailer: Retailer
     

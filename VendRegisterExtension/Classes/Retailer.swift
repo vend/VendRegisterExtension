@@ -10,7 +10,7 @@
 import Foundation
 
 /// A representation of the current retailer
-public struct Retailer: Decodable {
+public struct Retailer: Codable {
     /// The Vend identifier for the retailer
     public let identifier: String
     

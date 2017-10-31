@@ -9,7 +9,7 @@
 import Foundation
 
 /// A customer associated with a sale
-public struct Customer : Decodable {
+public struct Customer : Codable {
     
     /// The Vend identifier associated with the customer
     public let identifier: String?

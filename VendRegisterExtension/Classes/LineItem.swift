@@ -9,7 +9,7 @@
 import Foundation
 
 /// A line item associated with a sale
-public struct LineItem: Decodable {
+public struct LineItem: Codable {
     /// The Vend identifier for the product
     public let identifier: String
     
@@ -71,6 +71,17 @@ public struct LineItem: Decodable {
         
         taxIdentifier = try container.decode(String.self, forKey: CodingKeys.taxIdentifier)
         name = try container.decode(String.self, forKey: CodingKeys.name)
+    }
+    
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        
+        try container.encode(identifier, forKey: CodingKeys.identifier)
+        try container.encode("\(quantity)", forKey: CodingKeys.quantity)
+        try container.encode("\(unitPrice)", forKey: CodingKeys.unitPrice)
+        try container.encode("\(unitTax)", forKey: CodingKeys.unitTax)
+        try container.encode(taxIdentifier, forKey: CodingKeys.taxIdentifier)
+        try container.encode(name, forKey: CodingKeys.name)
     }
 }
 

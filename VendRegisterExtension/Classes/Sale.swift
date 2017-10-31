@@ -9,7 +9,7 @@
 import Foundation
 
 /// A representation of the current sale
-public struct Sale : Decodable {
+public struct Sale : Codable {
     /// The Vend identifier for the sale
     public let identifier: String
     

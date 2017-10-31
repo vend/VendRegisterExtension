@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Root : Decodable {
+public struct Root : Codable {
     
     public let payload: Payload
     
