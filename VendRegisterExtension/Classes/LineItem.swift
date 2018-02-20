@@ -23,12 +23,12 @@ public struct LineItem: Codable {
     public let unitTax: Decimal
     
     /// The tax identifier associated with the line item
-    public let taxIdentifier: String
+    public let taxIdentifier: String?
     
     /// The name of the line item
     public let name: String
     
-    public init(identifier: String, quantity: Decimal, unitPrice: Decimal, unitTax: Decimal, taxIdentifier: String, name: String) {
+    public init(identifier: String, quantity: Decimal, unitPrice: Decimal, unitTax: Decimal, taxIdentifier: String?, name: String) {
         self.identifier = identifier
         self.quantity = quantity
         self.unitPrice = unitPrice
@@ -68,8 +68,12 @@ public struct LineItem: Codable {
         } else {
             throw VendRegisterExtensionError.failedDecimalConversion(value: unitTaxString)
         }
+        if container.contains(CodingKeys.taxIdentifier) {
+            taxIdentifier = try container.decode(String?.self, forKey: CodingKeys.taxIdentifier)
+        } else {
+            taxIdentifier = nil
+        }
         
-        taxIdentifier = try container.decode(String.self, forKey: CodingKeys.taxIdentifier)
         name = try container.decode(String.self, forKey: CodingKeys.name)
     }
     
@@ -80,7 +84,9 @@ public struct LineItem: Codable {
         try container.encode("\(quantity)", forKey: CodingKeys.quantity)
         try container.encode("\(unitPrice)", forKey: CodingKeys.unitPrice)
         try container.encode("\(unitTax)", forKey: CodingKeys.unitTax)
-        try container.encode(taxIdentifier, forKey: CodingKeys.taxIdentifier)
+        if let taxIdentifier = taxIdentifier {
+            try container.encode(taxIdentifier, forKey: CodingKeys.taxIdentifier)
+        }
         try container.encode(name, forKey: CodingKeys.name)
     }
 }
@@ -96,7 +102,11 @@ private enum LineItemAttributes {
 
 extension LineItem: DictionaryRepresentable {
     public var asDictionary : [String: Any] {
-        return [LineItemAttributes.productIdentifier: identifier, LineItemAttributes.quantity: "\(quantity)", LineItemAttributes.unitPrice: "\(unitPrice)", LineItemAttributes.unitTax: "\(unitTax)", LineItemAttributes.taxIdentifier: taxIdentifier, LineItemAttributes.name : name]
+        var dictionary: [String: Any] = [LineItemAttributes.productIdentifier: identifier, LineItemAttributes.quantity: "\(quantity)", LineItemAttributes.unitPrice: "\(unitPrice)", LineItemAttributes.unitTax: "\(unitTax)", LineItemAttributes.name : name]
+        if let taxIdentifier = taxIdentifier {
+            dictionary[LineItemAttributes.taxIdentifier] = taxIdentifier
+        }
+        return dictionary
     }
     
     public init(dictionary: [String: Any]) throws {
@@ -130,10 +140,7 @@ extension LineItem: DictionaryRepresentable {
             throw VendRegisterExtensionError.failedDecimalConversion(value: unitTaxString)
         }
         
-        guard let taxIdentifierValue = dictionary[LineItemAttributes.taxIdentifier] as? String else {
-            throw VendRegisterExtensionError.failedDictionaryUnwrapping(identifier: LineItemAttributes.taxIdentifier, value: dictionary[LineItemAttributes.taxIdentifier])
-        }
-        taxIdentifier = taxIdentifierValue
+        taxIdentifier = dictionary[LineItemAttributes.taxIdentifier] as? String
         
         guard let nameValue = dictionary[LineItemAttributes.name] as? String else {
             throw VendRegisterExtensionError.failedDictionaryUnwrapping(identifier: LineItemAttributes.name, value: dictionary[LineItemAttributes.name])
