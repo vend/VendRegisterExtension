@@ -9,8 +9,13 @@ import Foundation
 
 public struct Root : Codable {
     
-    public let payload: Payload
+    public var payload: Payload
     
-    public let version: Int
+    public var version: Int
+    
+    public init(payload: Payload, version: Int) {
+        self.payload = payload
+        self.version = version
+    }
     
 }

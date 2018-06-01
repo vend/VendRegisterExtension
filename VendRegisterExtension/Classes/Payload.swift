@@ -12,10 +12,10 @@ import Foundation
 /// A representation of the payload
 public struct Payload: Codable {
     /// The current retailer for the sale
-    public let retailer: Retailer
+    public var retailer: Retailer
     
     /// The current sale
-    public let sale: Sale
+    public var sale: Sale
     
     public init(retailer: Retailer, sale: Sale) {
         self.retailer = retailer

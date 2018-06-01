@@ -12,7 +12,7 @@ import Foundation
 public struct Customer : Codable {
     
     /// The Vend identifier associated with the customer
-    public let identifier: String?
+    public var identifier: String?
     
     public init(identifier: String?) {
         self.identifier = identifier

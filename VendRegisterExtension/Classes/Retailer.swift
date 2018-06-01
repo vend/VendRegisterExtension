@@ -12,10 +12,10 @@ import Foundation
 /// A representation of the current retailer
 public struct Retailer: Codable {
     /// The Vend identifier for the retailer
-    public let identifier: String
+    public var identifier: String
     
     /// The current retailer domain
-    public let domainPrefix: String
+    public var domainPrefix: String
     
     public init(identifier: String, domainPrefix: String) {
         self.identifier = identifier

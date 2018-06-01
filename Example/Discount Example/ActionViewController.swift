@@ -22,6 +22,7 @@ class ActionViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     @IBOutlet weak var addItemButton: UIBarButtonItem!
+    @IBOutlet weak var mergeSaleButton: UIBarButtonItem!
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -52,6 +53,8 @@ class ActionViewController: UIViewController, UITableViewDelegate, UITableViewDa
                                 // A good citizen should determine which operations are supported by the current installation and respond accordingly
                                 // In this case we are enabling the button to add an item based on whether the .addLineItems operation is supported
                                 self.addItemButton.isEnabled = VendRegisterExtensionOperationName.availableOperations(api: root.version).contains(.addLineItems)
+                                
+                                self.mergeSaleButton.isEnabled = VendRegisterExtensionOperationName.availableOperations(api: root.version).contains(.mergeSale)
                                 
                                 self.sale = root.payload.sale
                                 print("Got my sale: \(root.payload.sale)")
@@ -85,6 +88,22 @@ class ActionViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
+    @IBAction func mergeSale(_ sender: Any) {
+        guard var sale = sale else { return }
+        
+        sale.note = "Hello from Discount Example"
+        
+        if sale.lineItems.count > 0 {
+            sale.lineItems[0].note = "Hello to the first line item"
+            sale.lineItems[0].unitPrice = NSDecimalNumber(string: "2.25")
+        }
+        
+        
+        
+        self.extensionContext?.completeRequest(returningItems: [VendRegisterExtensionOperation.mergeSale(sale).extensionItem], completionHandler: nil)
+        
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
@@ -108,7 +127,7 @@ class ActionViewController: UIViewController, UITableViewDelegate, UITableViewDa
             let lineItem = sale.lineItems[indexPath.row]
             cell.quantityLabel.text = "\(lineItem.quantity)"
             cell.itemLabel.text = lineItem.name
-            cell.costLabel.text = "\(lineItem.unitPrice + lineItem.unitTax)"
+            cell.costLabel.text = "\(lineItem.unitPrice.adding(lineItem.unitTax))"
             
             return cell
         case 1:
