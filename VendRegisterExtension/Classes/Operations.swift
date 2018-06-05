@@ -17,11 +17,15 @@ private enum ExtensionKeys {
 /// A convenience enum to type safe the name of the operation and determine which operations are supported by the current Vend Register installation
 public enum VendRegisterExtensionOperationName : String {
     case addLineItems
+    case mergeSale
     
     public static func availableOperations(api: Int) -> [VendRegisterExtensionOperationName] {
         var operations = [VendRegisterExtensionOperationName]()
         if api >= 1 {
             operations.append(.addLineItems)
+        }
+        if api >= 2 {
+            operations.append(.mergeSale)
         }
         return operations
     }
@@ -32,11 +36,13 @@ public enum VendRegisterExtensionOperation {
     
     /// Add line items to the current sale
     case addLineItems([LineItem])
+    case mergeSale(Sale)
     
     /// A key to use in the NSExtensionItem so that we can recognise the operation
     var operationName : VendRegisterExtensionOperationName {
         switch self {
         case .addLineItems(_): return .addLineItems
+        case .mergeSale(_): return .mergeSale
         }
     }
     
@@ -46,11 +52,13 @@ public enum VendRegisterExtensionOperation {
         
         var dict = [String: Any]()
         dict[ExtensionKeys.operation] = self.operationName.rawValue
-        dict[ExtensionKeys.version] = 1.0
+        dict[ExtensionKeys.version] = 2.0
         
         switch self {
         case .addLineItems(let lineItems):
             dict[ExtensionKeys.parameters] = lineItems.map({ $0.asDictionary })
+        case .mergeSale(let sale):
+            dict[ExtensionKeys.parameters] = try? JSONEncoder().encode(sale)
         }
         
         item.userInfo = dict

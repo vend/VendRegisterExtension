@@ -11,21 +11,25 @@ import Foundation
 /// A representation of the current sale
 public struct Sale : Codable {
     /// The Vend identifier for the sale
-    public let identifier: String
+    public var identifier: String
     
     /// A customer on the sale if there is one
-    public let customer: Customer?
+    public var customer: Customer?
     
     /// The sale totals
-    public let totals: Totals
+    public var totals: Totals
     
     /// The current line items associated with the sale
-    public let lineItems: [LineItem]
+    public var lineItems: [LineItem]
     
-    public init(identifier: String, customer: Customer? = nil, totals: Totals, lineItems: [LineItem] = []) {
+    /// A note on the sale
+    public var note: String?
+    
+    public init(identifier: String, customer: Customer? = nil, totals: Totals, lineItems: [LineItem] = [], note: String?) {
         self.identifier = identifier
         self.customer = customer
         self.totals = totals
         self.lineItems = lineItems
+        self.note = note
     }
 }

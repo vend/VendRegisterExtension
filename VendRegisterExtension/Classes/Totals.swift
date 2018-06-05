@@ -12,18 +12,18 @@ import Foundation
 public struct Totals : Codable {
     
     /// The tax on the sale
-    public let tax: Decimal
+    public var tax: NSDecimalNumber
     
     /// The total price on the sale
-    public let price: Decimal
+    public var price: NSDecimalNumber
     
     /// The amount of the sale that has already been paid
-    public let paid: Decimal
+    public var paid: NSDecimalNumber
     
     /// The remaining amount on the sale to be paid
-    public let toPay: Decimal
+    public var toPay: NSDecimalNumber
     
-    public init(tax: Decimal, price: Decimal, paid: Decimal, toPay: Decimal) {
+    public init(tax: NSDecimalNumber, price: NSDecimalNumber, paid: NSDecimalNumber, toPay: NSDecimalNumber) {
         self.tax = tax
         self.price = price
         self.paid = paid
@@ -40,38 +40,30 @@ public struct Totals : Codable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let taxString = try container.decode(String.self, forKey: CodingKeys.tax)
-        if let value = Decimal(string: taxString) {
-            tax = value
-        } else {
-            throw VendRegisterExtensionError.failedDecimalConversion(value: taxString)
-        }
+        tax = NSDecimalNumber(string: taxString)
+        
         let priceString = try container.decode(String.self, forKey: CodingKeys.price)
-        if let value = Decimal(string: priceString) {
-            price = value
-        } else {
-            throw VendRegisterExtensionError.failedDecimalConversion(value: priceString)
-        }
+        price = NSDecimalNumber(string: priceString)
+        
         let paidString = try container.decode(String.self, forKey: CodingKeys.paid)
-        if let value = Decimal(string: paidString) {
-            paid = value
-        } else {
-            throw VendRegisterExtensionError.failedDecimalConversion(value: paidString)
-        }
+        paid = NSDecimalNumber(string: paidString)
+        
         let toPayString = try container.decode(String.self, forKey: CodingKeys.toPay)
-        if let value = Decimal(string: toPayString) {
-            toPay = value
-        } else {
-            throw VendRegisterExtensionError.failedDecimalConversion(value: toPayString)
-        }
+        toPay = NSDecimalNumber(string: toPayString)
     }
     
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         
-        try container.encode("\(tax)", forKey: CodingKeys.tax)
-        try container.encode("\(price)", forKey: CodingKeys.price)
-        try container.encode("\(paid)", forKey: CodingKeys.paid)
-        try container.encode("\(toPay)", forKey: CodingKeys.toPay)
+        let numberFormatter = NumberFormatter()
+        numberFormatter.maximumIntegerDigits = 5
+        numberFormatter.generatesDecimalNumbers = true
+        numberFormatter.numberStyle = .decimal
+        
+        try container.encode(numberFormatter.string(from: tax), forKey: CodingKeys.tax)
+        try container.encode(numberFormatter.string(from: price), forKey: CodingKeys.price)
+        try container.encode(numberFormatter.string(from: paid), forKey: CodingKeys.paid)
+        try container.encode(numberFormatter.string(from: toPay), forKey: CodingKeys.toPay)
     }
     
 }
