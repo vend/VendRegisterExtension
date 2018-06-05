@@ -98,8 +98,6 @@ class ActionViewController: UIViewController, UITableViewDelegate, UITableViewDa
             sale.lineItems[0].unitPrice = NSDecimalNumber(string: "2.25")
         }
         
-        
-        
         self.extensionContext?.completeRequest(returningItems: [VendRegisterExtensionOperation.mergeSale(sale).extensionItem], completionHandler: nil)
         
     }
@@ -127,7 +125,7 @@ class ActionViewController: UIViewController, UITableViewDelegate, UITableViewDa
             let lineItem = sale.lineItems[indexPath.row]
             cell.quantityLabel.text = "\(lineItem.quantity)"
             cell.itemLabel.text = lineItem.name
-            cell.costLabel.text = "\(lineItem.unitPrice.adding(lineItem.unitTax))"
+            cell.costLabel.text = lineItem.priceIsTaxInclusive ? "\(lineItem.unitPrice)" : "\(lineItem.unitPrice.adding(lineItem.unitTax))"
             
             return cell
         case 1:

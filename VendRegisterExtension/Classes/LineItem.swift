@@ -13,28 +13,31 @@ public struct LineItem: Codable {
     /// The Vend identifier for the lineItem (if nil, then this will be considered to be a new lineItem)
     public var lineItemIdentifier: String?
     
-    /// The Vend identifier for the product
+    /// The Vend identifier for the product (only editable in new line items)
     public var productIdentifier: String
     
-    /// The quantity of the product in the sale
+    /// The quantity of the product in the sale (editable on all items)
     public var quantity: NSDecimalNumber
     
-    /// The unit price for the line item
+    /// The unit price for the line item (editable on all items)
     public var unitPrice: NSDecimalNumber
     
-    /// The unit tax for the line item
+    /// The unit tax for the line item (not editable, value is ignored on new items)
     public var unitTax: NSDecimalNumber
     
-    /// The tax identifier associated with the line item
+    /// A flag to indicate if the price is tax inclusive (not editable, value is ignored on new items)
+    public var priceIsTaxInclusive: Bool
+    
+    /// The tax identifier associated with the line item (not editable, value is ignored on new items)
     public var taxIdentifier: String?
     
-    /// The name of the line item
+    /// The name of the line item (not editable, value is ignored on new items)
     public var name: String
     
-    /// The note on the line item
+    /// The note on the line item (editable on all items)
     public var note: String?
     
-    public init(lineItemIdentifier: String?, productIdentifier:String, quantity: NSDecimalNumber, unitPrice: NSDecimalNumber, unitTax: NSDecimalNumber, taxIdentifier: String?, name: String, note: String?) {
+    public init(lineItemIdentifier: String?, productIdentifier:String, quantity: NSDecimalNumber, unitPrice: NSDecimalNumber, unitTax: NSDecimalNumber, priceIsTaxInclusive: Bool, taxIdentifier: String?, name: String, note: String?) {
         self.lineItemIdentifier = lineItemIdentifier
         self.productIdentifier = productIdentifier
         self.quantity = quantity
@@ -43,6 +46,7 @@ public struct LineItem: Codable {
         self.taxIdentifier = taxIdentifier
         self.name = name
         self.note = note
+        self.priceIsTaxInclusive = priceIsTaxInclusive
     }
     
     enum CodingKeys: String, CodingKey {
@@ -52,6 +56,7 @@ public struct LineItem: Codable {
         case unitPrice
         case unitTax
         case taxIdentifier
+        case priceIsTaxInclusive
         case name
         case note
     }
@@ -82,7 +87,11 @@ public struct LineItem: Codable {
         } else {
             note = nil
         }
-        
+        if (container.contains(CodingKeys.priceIsTaxInclusive)) {
+            priceIsTaxInclusive = try container.decode(Bool.self, forKey: CodingKeys.priceIsTaxInclusive)
+        } else {
+            priceIsTaxInclusive = false
+        }
         name = try container.decode(String.self, forKey: CodingKeys.name)
     }
     
@@ -97,7 +106,7 @@ public struct LineItem: Codable {
         numberFormatter.maximumIntegerDigits = 5
         numberFormatter.generatesDecimalNumbers = true
         numberFormatter.numberStyle = .decimal
-        
+        try container.encode(priceIsTaxInclusive, forKey: CodingKeys.priceIsTaxInclusive)
         try container.encode(productIdentifier, forKey: CodingKeys.productIdentifier)
         try container.encode(numberFormatter.string(from: quantity), forKey: CodingKeys.quantity)
         try container.encode(numberFormatter.string(from: unitPrice), forKey: CodingKeys.unitPrice)
@@ -121,6 +130,7 @@ private enum LineItemAttributes {
     static let taxIdentifier = "taxIdentifier"
     static let name = "name"
     static let note = "note"
+    static let priceIsTaxInclusive = "priceIsTaxInclusive"
 }
 
 extension LineItem: DictionaryRepresentable {
@@ -161,6 +171,8 @@ extension LineItem: DictionaryRepresentable {
         name = nameValue
         
         note = dictionary[LineItemAttributes.note] as? String
+        
+        priceIsTaxInclusive = dictionary[LineItemAttributes.priceIsTaxInclusive] as? Bool ?? false
     }
 }
 
