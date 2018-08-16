@@ -135,10 +135,19 @@ private enum LineItemAttributes {
 
 extension LineItem: DictionaryRepresentable {
     public var asDictionary : [String: Any] {
-        var dictionary: [String: Any] = [LineItemAttributes.productIdentifier: productIdentifier, LineItemAttributes.quantity: "\(quantity)", LineItemAttributes.unitPrice: "\(unitPrice)", LineItemAttributes.unitTax: "\(unitTax)", LineItemAttributes.name : name]
+        var dictionary: [String: Any] = [
+            LineItemAttributes.productIdentifier: productIdentifier,
+            LineItemAttributes.quantity: "\(quantity)",
+            LineItemAttributes.unitPrice: "\(unitPrice)",
+            LineItemAttributes.unitTax: "\(unitTax)",
+            LineItemAttributes.name : name]
         if let taxIdentifier = taxIdentifier {
             dictionary[LineItemAttributes.taxIdentifier] = taxIdentifier
         }
+        if let note = note {
+            dictionary[LineItemAttributes.note] = note
+        }
+        dictionary[LineItemAttributes.priceIsTaxInclusive] = priceIsTaxInclusive
         return dictionary
     }
     

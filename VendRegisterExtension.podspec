@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'VendRegisterExtension'
-s.version          = '0.5.0'
+s.version          = '0.5.1'
 s.summary          = 'A collection of helpers to make extensions for VendRegister'
 
 s.description      = <<-DESC
